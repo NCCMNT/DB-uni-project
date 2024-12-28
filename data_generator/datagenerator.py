@@ -5,6 +5,11 @@ import people.roles
 import studies
 import studies.grades
 import studies.subjects
+import misc
+import misc.cities
+import misc.countries
+import misc.addresses
+
 
 path_to_json_file = "database_credentials.json"
 
@@ -35,6 +40,9 @@ def main():
         cursor = conn.cursor()
         print("Successfully connected to the database.")
 
+        misc.countries.fill_countries(cursor)
+        misc.cities.fill_cities(cursor)
+        misc.addresses.fill_addresses(cursor)
         people.roles.fill_roles(cursor)
         people.languages.fill_languages(cursor)
         studies.grades.fill_grades(cursor)
