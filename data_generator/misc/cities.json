@@ -1,0 +1,3331 @@
+[
+    {
+        "country_name": "Andorra",
+        "code": "AD",
+        "cities": [
+            {
+                "city_name": "Les Escaldes"
+            },
+            {
+                "city_name": "Encamp"
+            },
+            {
+                "city_name": "Sant Julià de Lòria"
+            }
+        ]
+    },
+    {
+        "country_name": "United Arab Emirates",
+        "code": "AE",
+        "cities": [
+            {
+                "city_name": "Dubai"
+            },
+            {
+                "city_name": "Sharjah"
+            },
+            {
+                "city_name": "Ajman"
+            }
+        ]
+    },
+    {
+        "country_name": "Afghanistan",
+        "code": "AF",
+        "cities": [
+            {
+                "city_name": "Herat"
+            },
+            {
+                "city_name": "Mazari Sharif"
+            },
+            {
+                "city_name": "Kandahar"
+            }
+        ]
+    },
+    {
+        "country_name": "Antigua and Barbuda",
+        "code": "AG",
+        "cities": [
+            {
+                "city_name": "Piggotts"
+            },
+            {
+                "city_name": "Bolands"
+            },
+            {
+                "city_name": "Codrington"
+            }
+        ]
+    },
+    {
+        "country_name": "Anguilla",
+        "code": "AI",
+        "cities": [
+            {
+                "city_name": "Blowing Point Village"
+            },
+            {
+                "city_name": "Sandy Ground Village"
+            },
+            {
+                "city_name": "West End Village"
+            }
+        ]
+    },
+    {
+        "country_name": "Albania",
+        "code": "AL",
+        "cities": [
+            {
+                "city_name": "Durrës"
+            },
+            {
+                "city_name": "Elbasan"
+            },
+            {
+                "city_name": "Vlorë"
+            }
+        ]
+    },
+    {
+        "country_name": "Armenia",
+        "code": "AM",
+        "cities": [
+            {
+                "city_name": "Gyumri"
+            },
+            {
+                "city_name": "Vanadzor"
+            },
+            {
+                "city_name": "Hrazdan"
+            }
+        ]
+    },
+    {
+        "country_name": "Angola",
+        "code": "AO",
+        "cities": [
+            {
+                "city_name": "Lubango"
+            },
+            {
+                "city_name": "Huambo"
+            },
+            {
+                "city_name": "Benguela"
+            }
+        ]
+    },
+    {
+        "country_name": "Antarctica",
+        "code": "AQ",
+        "cities": []
+    },
+    {
+        "country_name": "Argentina",
+        "code": "AR",
+        "cities": [
+            {
+                "city_name": "Córdoba"
+            },
+            {
+                "city_name": "Tucumán"
+            },
+            {
+                "city_name": "Salta"
+            }
+        ]
+    },
+    {
+        "country_name": "American Samoa",
+        "code": "AS",
+        "cities": [
+            {
+                "city_name": "Ta`ū"
+            },
+            {
+                "city_name": "Taulaga"
+            }
+        ]
+    },
+    {
+        "country_name": "Austria",
+        "code": "AT",
+        "cities": [
+            {
+                "city_name": "Graz"
+            },
+            {
+                "city_name": "Linz"
+            },
+            {
+                "city_name": "Salzburg"
+            }
+        ]
+    },
+    {
+        "country_name": "Australia",
+        "code": "AU",
+        "cities": [
+            {
+                "city_name": "Sydney"
+            },
+            {
+                "city_name": "Melbourne"
+            },
+            {
+                "city_name": "Brisbane"
+            }
+        ]
+    },
+    {
+        "country_name": "Aruba",
+        "code": "AW",
+        "cities": []
+    },
+    {
+        "country_name": "Åland",
+        "code": "AX",
+        "cities": []
+    },
+    {
+        "country_name": "Azerbaijan",
+        "code": "AZ",
+        "cities": [
+            {
+                "city_name": "Sumqayit"
+            },
+            {
+                "city_name": "Ganja"
+            },
+            {
+                "city_name": "Lankaran"
+            }
+        ]
+    },
+    {
+        "country_name": "Bosnia and Herzegovina",
+        "code": "BA",
+        "cities": [
+            {
+                "city_name": "Banja Luka"
+            },
+            {
+                "city_name": "Brčko"
+            }
+        ]
+    },
+    {
+        "country_name": "Barbados",
+        "code": "BB",
+        "cities": [
+            {
+                "city_name": "Speightstown"
+            },
+            {
+                "city_name": "Oistins"
+            },
+            {
+                "city_name": "Bathsheba"
+            }
+        ]
+    },
+    {
+        "country_name": "Bangladesh",
+        "code": "BD",
+        "cities": [
+            {
+                "city_name": "Chittagong"
+            },
+            {
+                "city_name": "Khulna"
+            },
+            {
+                "city_name": "Rangpur City"
+            }
+        ]
+    },
+    {
+        "country_name": "Belgium",
+        "code": "BE",
+        "cities": [
+            {
+                "city_name": "Namur"
+            }
+        ]
+    },
+    {
+        "country_name": "Burkina Faso",
+        "code": "BF",
+        "cities": [
+            {
+                "city_name": "Bobo-Dioulasso"
+            },
+            {
+                "city_name": "Koudougou"
+            },
+            {
+                "city_name": "Ouahigouya"
+            }
+        ]
+    },
+    {
+        "country_name": "Bulgaria",
+        "code": "BG",
+        "cities": [
+            {
+                "city_name": "Plovdiv"
+            },
+            {
+                "city_name": "Varna"
+            },
+            {
+                "city_name": "Burgas"
+            }
+        ]
+    },
+    {
+        "country_name": "Bahrain",
+        "code": "BH",
+        "cities": []
+    },
+    {
+        "country_name": "Burundi",
+        "code": "BI",
+        "cities": [
+            {
+                "city_name": "Bujumbura"
+            },
+            {
+                "city_name": "Ngozi"
+            },
+            {
+                "city_name": "Rumonge"
+            }
+        ]
+    },
+    {
+        "country_name": "Benin",
+        "code": "BJ",
+        "cities": [
+            {
+                "city_name": "Parakou"
+            },
+            {
+                "city_name": "Abomey"
+            },
+            {
+                "city_name": "Djougou"
+            }
+        ]
+    },
+    {
+        "country_name": "Saint Barthélemy",
+        "code": "BL",
+        "cities": []
+    },
+    {
+        "country_name": "Bermuda",
+        "code": "BM",
+        "cities": []
+    },
+    {
+        "country_name": "Brunei",
+        "code": "BN",
+        "cities": [
+            {
+                "city_name": "Kuala Belait"
+            },
+            {
+                "city_name": "Tutong"
+            },
+            {
+                "city_name": "Bangar"
+            }
+        ]
+    },
+    {
+        "country_name": "Bolivia",
+        "code": "BO",
+        "cities": [
+            {
+                "city_name": "Santa Cruz"
+            },
+            {
+                "city_name": "Cochabamba"
+            },
+            {
+                "city_name": "Oruro"
+            }
+        ]
+    },
+    {
+        "country_name": "Bonaire, Sint Eustatius, and Saba",
+        "code": "BQ",
+        "cities": [
+            {
+                "city_name": "Oranjestad"
+            },
+            {
+                "city_name": "The Bottom"
+            }
+        ]
+    },
+    {
+        "country_name": "Brazil",
+        "code": "BR",
+        "cities": [
+            {
+                "city_name": "São Paulo"
+            },
+            {
+                "city_name": "Rio de Janeiro"
+            },
+            {
+                "city_name": "Belo Horizonte"
+            }
+        ]
+    },
+    {
+        "country_name": "Bahamas",
+        "code": "BS",
+        "cities": [
+            {
+                "city_name": "Freeport"
+            },
+            {
+                "city_name": "West End"
+            },
+            {
+                "city_name": "San Andros"
+            }
+        ]
+    },
+    {
+        "country_name": "Bhutan",
+        "code": "BT",
+        "cities": [
+            {
+                "city_name": "Tsirang"
+            },
+            {
+                "city_name": "Punakha"
+            },
+            {
+                "city_name": "Pemagatshel"
+            }
+        ]
+    },
+    {
+        "country_name": "Bouvet Island",
+        "code": "BV",
+        "cities": []
+    },
+    {
+        "country_name": "Botswana",
+        "code": "BW",
+        "cities": [
+            {
+                "city_name": "Francistown"
+            },
+            {
+                "city_name": "Maun"
+            },
+            {
+                "city_name": "Molepolole"
+            }
+        ]
+    },
+    {
+        "country_name": "Belarus",
+        "code": "BY",
+        "cities": [
+            {
+                "city_name": "Homyel"
+            },
+            {
+                "city_name": "Hrodna"
+            },
+            {
+                "city_name": "Vitebsk"
+            }
+        ]
+    },
+    {
+        "country_name": "Belize",
+        "code": "BZ",
+        "cities": [
+            {
+                "city_name": "Belize City"
+            },
+            {
+                "city_name": "Orange Walk"
+            },
+            {
+                "city_name": "Corozal"
+            }
+        ]
+    },
+    {
+        "country_name": "Canada",
+        "code": "CA",
+        "cities": [
+            {
+                "city_name": "Toronto"
+            },
+            {
+                "city_name": "Edmonton"
+            },
+            {
+                "city_name": "Winnipeg"
+            }
+        ]
+    },
+    {
+        "country_name": "Cocos (Keeling) Islands",
+        "code": "CC",
+        "cities": []
+    },
+    {
+        "country_name": "DR Congo",
+        "code": "CD",
+        "cities": [
+            {
+                "city_name": "Lubumbashi"
+            },
+            {
+                "city_name": "Mbuji-Mayi"
+            },
+            {
+                "city_name": "Kananga"
+            }
+        ]
+    },
+    {
+        "country_name": "Central African Republic",
+        "code": "CF",
+        "cities": [
+            {
+                "city_name": "Bimbo"
+            },
+            {
+                "city_name": "Carnot"
+            },
+            {
+                "city_name": "Berbérati"
+            }
+        ]
+    },
+    {
+        "country_name": "Congo Republic",
+        "code": "CG",
+        "cities": [
+            {
+                "city_name": "Pointe-Noire"
+            },
+            {
+                "city_name": "Dolisie"
+            },
+            {
+                "city_name": "Impfondo"
+            }
+        ]
+    },
+    {
+        "country_name": "Switzerland",
+        "code": "CH",
+        "cities": [
+            {
+                "city_name": "Zurich"
+            },
+            {
+                "city_name": "Geneva"
+            },
+            {
+                "city_name": "Basel"
+            }
+        ]
+    },
+    {
+        "country_name": "Ivory Coast",
+        "code": "CI",
+        "cities": [
+            {
+                "city_name": "Abidjan"
+            },
+            {
+                "city_name": "Bouaké"
+            },
+            {
+                "city_name": "Korhogo"
+            }
+        ]
+    },
+    {
+        "country_name": "Cook Islands",
+        "code": "CK",
+        "cities": []
+    },
+    {
+        "country_name": "Chile",
+        "code": "CL",
+        "cities": [
+            {
+                "city_name": "Antofagasta"
+            },
+            {
+                "city_name": "Valparaíso"
+            },
+            {
+                "city_name": "Port Montt"
+            }
+        ]
+    },
+    {
+        "country_name": "Cameroon",
+        "code": "CM",
+        "cities": [
+            {
+                "city_name": "Douala"
+            },
+            {
+                "city_name": "Bamenda"
+            },
+            {
+                "city_name": "Bafoussam"
+            }
+        ]
+    },
+    {
+        "country_name": "China",
+        "code": "CN",
+        "cities": [
+            {
+                "city_name": "Shanghai"
+            },
+            {
+                "city_name": "Guangzhou"
+            },
+            {
+                "city_name": "Chengdu"
+            }
+        ]
+    },
+    {
+        "country_name": "Colombia",
+        "code": "CO",
+        "cities": [
+            {
+                "city_name": "Santiago de Cali"
+            },
+            {
+                "city_name": "Medellín"
+            },
+            {
+                "city_name": "Barranquilla"
+            }
+        ]
+    },
+    {
+        "country_name": "Costa Rica",
+        "code": "CR",
+        "cities": [
+            {
+                "city_name": "Puerto Limón"
+            },
+            {
+                "city_name": "Alajuela"
+            },
+            {
+                "city_name": "Liberia"
+            }
+        ]
+    },
+    {
+        "country_name": "Cuba",
+        "code": "CU",
+        "cities": [
+            {
+                "city_name": "Santiago de Cuba"
+            },
+            {
+                "city_name": "Camagüey"
+            },
+            {
+                "city_name": "Holguín"
+            }
+        ]
+    },
+    {
+        "country_name": "Cabo Verde",
+        "code": "CV",
+        "cities": [
+            {
+                "city_name": "Mindelo"
+            },
+            {
+                "city_name": "Espargos"
+            },
+            {
+                "city_name": "Assomada"
+            }
+        ]
+    },
+    {
+        "country_name": "Curaçao",
+        "code": "CW",
+        "cities": []
+    },
+    {
+        "country_name": "Christmas Island",
+        "code": "CX",
+        "cities": []
+    },
+    {
+        "country_name": "Cyprus",
+        "code": "CY",
+        "cities": [
+            {
+                "city_name": "Limassol"
+            },
+            {
+                "city_name": "Larnaca"
+            },
+            {
+                "city_name": "Famagusta"
+            }
+        ]
+    },
+    {
+        "country_name": "Czechia",
+        "code": "CZ",
+        "cities": [
+            {
+                "city_name": "Brno"
+            },
+            {
+                "city_name": "Ostrava"
+            },
+            {
+                "city_name": "Pilsen"
+            }
+        ]
+    },
+    {
+        "country_name": "Germany",
+        "code": "DE",
+        "cities": [
+            {
+                "city_name": "Hamburg"
+            },
+            {
+                "city_name": "Munich"
+            },
+            {
+                "city_name": "Stuttgart"
+            }
+        ]
+    },
+    {
+        "country_name": "Djibouti",
+        "code": "DJ",
+        "cities": [
+            {
+                "city_name": "Ali Sabih"
+            },
+            {
+                "city_name": "Dikhil"
+            },
+            {
+                "city_name": "Tadjoura"
+            }
+        ]
+    },
+    {
+        "country_name": "Denmark",
+        "code": "DK",
+        "cities": [
+            {
+                "city_name": "Aalborg"
+            },
+            {
+                "city_name": "Vejle"
+            },
+            {
+                "city_name": "Viborg"
+            }
+        ]
+    },
+    {
+        "country_name": "Dominica",
+        "code": "DM",
+        "cities": [
+            {
+                "city_name": "Portsmouth"
+            },
+            {
+                "city_name": "Berekua"
+            },
+            {
+                "city_name": "Saint Joseph"
+            }
+        ]
+    },
+    {
+        "country_name": "Dominican Republic",
+        "code": "DO",
+        "cities": [
+            {
+                "city_name": "Santiago"
+            },
+            {
+                "city_name": "Santo Domingo Este"
+            },
+            {
+                "city_name": "San Pedro de Macorís"
+            }
+        ]
+    },
+    {
+        "country_name": "Algeria",
+        "code": "DZ",
+        "cities": [
+            {
+                "city_name": "Oran"
+            },
+            {
+                "city_name": "Constantine"
+            },
+            {
+                "city_name": "Annaba"
+            }
+        ]
+    },
+    {
+        "country_name": "Ecuador",
+        "code": "EC",
+        "cities": [
+            {
+                "city_name": "Guayaquil"
+            },
+            {
+                "city_name": "Cuenca"
+            },
+            {
+                "city_name": "Santo Domingo de los Colorados"
+            }
+        ]
+    },
+    {
+        "country_name": "Estonia",
+        "code": "EE",
+        "cities": [
+            {
+                "city_name": "Tartu"
+            },
+            {
+                "city_name": "Pärnu"
+            },
+            {
+                "city_name": "Viljandi"
+            }
+        ]
+    },
+    {
+        "country_name": "Egypt",
+        "code": "EG",
+        "cities": [
+            {
+                "city_name": "Alexandria"
+            },
+            {
+                "city_name": "Giza"
+            },
+            {
+                "city_name": "Port Said"
+            }
+        ]
+    },
+    {
+        "country_name": "Western Sahara",
+        "code": "EH",
+        "cities": [
+            {
+                "city_name": "Laayoune"
+            },
+            {
+                "city_name": "Dakhla"
+            }
+        ]
+    },
+    {
+        "country_name": "Eritrea",
+        "code": "ER",
+        "cities": [
+            {
+                "city_name": "Keren"
+            },
+            {
+                "city_name": "Massawa"
+            },
+            {
+                "city_name": "Assab"
+            }
+        ]
+    },
+    {
+        "country_name": "Spain",
+        "code": "ES",
+        "cities": [
+            {
+                "city_name": "Barcelona"
+            },
+            {
+                "city_name": "Valencia"
+            },
+            {
+                "city_name": "Seville"
+            }
+        ]
+    },
+    {
+        "country_name": "Ethiopia",
+        "code": "ET",
+        "cities": [
+            {
+                "city_name": "Jijiga"
+            },
+            {
+                "city_name": "Mekele"
+            },
+            {
+                "city_name": "Awasa"
+            }
+        ]
+    },
+    {
+        "country_name": "Finland",
+        "code": "FI",
+        "cities": [
+            {
+                "city_name": "Tampere"
+            },
+            {
+                "city_name": "Oulu"
+            },
+            {
+                "city_name": "Turku"
+            }
+        ]
+    },
+    {
+        "country_name": "Fiji",
+        "code": "FJ",
+        "cities": [
+            {
+                "city_name": "Lautoka"
+            },
+            {
+                "city_name": "Labasa"
+            },
+            {
+                "city_name": "Levuka"
+            }
+        ]
+    },
+    {
+        "country_name": "Falkland Islands",
+        "code": "FK",
+        "cities": []
+    },
+    {
+        "country_name": "Micronesia",
+        "code": "FM",
+        "cities": [
+            {
+                "city_name": "Weno"
+            },
+            {
+                "city_name": "Tofol"
+            },
+            {
+                "city_name": "Colonia"
+            }
+        ]
+    },
+    {
+        "country_name": "Faroe Islands",
+        "code": "FO",
+        "cities": [
+            {
+                "city_name": "Klaksvík"
+            },
+            {
+                "city_name": "Fuglafjørður"
+            },
+            {
+                "city_name": "Miðvágur"
+            }
+        ]
+    },
+    {
+        "country_name": "France",
+        "code": "FR",
+        "cities": [
+            {
+                "city_name": "Marseille"
+            },
+            {
+                "city_name": "Lyon"
+            },
+            {
+                "city_name": "Toulouse"
+            }
+        ]
+    },
+    {
+        "country_name": "Gabon",
+        "code": "GA",
+        "cities": [
+            {
+                "city_name": "Port-Gentil"
+            },
+            {
+                "city_name": "Franceville"
+            },
+            {
+                "city_name": "Oyem"
+            }
+        ]
+    },
+    {
+        "country_name": "United Kingdom",
+        "code": "GB",
+        "cities": [
+            {
+                "city_name": "Edinburgh"
+            },
+            {
+                "city_name": "Cardiff"
+            },
+            {
+                "city_name": "Belfast"
+            }
+        ]
+    },
+    {
+        "country_name": "Grenada",
+        "code": "GD",
+        "cities": [
+            {
+                "city_name": "Gouyave"
+            },
+            {
+                "city_name": "Grenville"
+            },
+            {
+                "city_name": "Victoria"
+            }
+        ]
+    },
+    {
+        "country_name": "Georgia",
+        "code": "GE",
+        "cities": [
+            {
+                "city_name": "Batumi"
+            },
+            {
+                "city_name": "Kutaisi"
+            },
+            {
+                "city_name": "Rustavi"
+            }
+        ]
+    },
+    {
+        "country_name": "French Guiana",
+        "code": "GF",
+        "cities": []
+    },
+    {
+        "country_name": "Guernsey",
+        "code": "GG",
+        "cities": [
+            {
+                "city_name": "St. Sampson"
+            },
+            {
+                "city_name": "Torteval"
+            },
+            {
+                "city_name": "Saint Anne"
+            }
+        ]
+    },
+    {
+        "country_name": "Ghana",
+        "code": "GH",
+        "cities": [
+            {
+                "city_name": "Kumasi"
+            },
+            {
+                "city_name": "Tamale"
+            },
+            {
+                "city_name": "Cape Coast"
+            }
+        ]
+    },
+    {
+        "country_name": "Gibraltar",
+        "code": "GI",
+        "cities": []
+    },
+    {
+        "country_name": "Greenland",
+        "code": "GL",
+        "cities": [
+            {
+                "city_name": "Sisimiut"
+            },
+            {
+                "city_name": "Ilulissat"
+            },
+            {
+                "city_name": "Qaqortoq"
+            }
+        ]
+    },
+    {
+        "country_name": "The Gambia",
+        "code": "GM",
+        "cities": [
+            {
+                "city_name": "Brikama"
+            },
+            {
+                "city_name": "Basse Santa Su"
+            },
+            {
+                "city_name": "Kerewan"
+            }
+        ]
+    },
+    {
+        "country_name": "Guinea",
+        "code": "GN",
+        "cities": [
+            {
+                "city_name": "Nzérékoré"
+            },
+            {
+                "city_name": "Kankan"
+            },
+            {
+                "city_name": "Kindia"
+            }
+        ]
+    },
+    {
+        "country_name": "Guadeloupe",
+        "code": "GP",
+        "cities": []
+    },
+    {
+        "country_name": "Equatorial Guinea",
+        "code": "GQ",
+        "cities": [
+            {
+                "city_name": "Bata"
+            },
+            {
+                "city_name": "Ebebiyin"
+            },
+            {
+                "city_name": "Luba"
+            }
+        ]
+    },
+    {
+        "country_name": "Greece",
+        "code": "GR",
+        "cities": [
+            {
+                "city_name": "Thessaloniki"
+            },
+            {
+                "city_name": "Pátrai"
+            },
+            {
+                "city_name": "Larissa"
+            }
+        ]
+    },
+    {
+        "country_name": "South Georgia and South Sandwich Islands",
+        "code": "GS",
+        "cities": []
+    },
+    {
+        "country_name": "Guatemala",
+        "code": "GT",
+        "cities": [
+            {
+                "city_name": "Cobán"
+            },
+            {
+                "city_name": "Quetzaltenango"
+            },
+            {
+                "city_name": "Jalapa"
+            }
+        ]
+    },
+    {
+        "country_name": "Guam",
+        "code": "GU",
+        "cities": [
+            {
+                "city_name": "Dededo Village"
+            },
+            {
+                "city_name": "Yigo Village"
+            },
+            {
+                "city_name": "Tamuning-Tumon-Harmon Village"
+            }
+        ]
+    },
+    {
+        "country_name": "Guinea-Bissau",
+        "code": "GW",
+        "cities": [
+            {
+                "city_name": "Gabú"
+            },
+            {
+                "city_name": "Bafatá"
+            },
+            {
+                "city_name": "Bolama"
+            }
+        ]
+    },
+    {
+        "country_name": "Guyana",
+        "code": "GY",
+        "cities": [
+            {
+                "city_name": "Linden"
+            },
+            {
+                "city_name": "New Amsterdam"
+            },
+            {
+                "city_name": "Anna Regina"
+            }
+        ]
+    },
+    {
+        "country_name": "Hong Kong",
+        "code": "HK",
+        "cities": [
+            {
+                "city_name": "Tuen Mun"
+            },
+            {
+                "city_name": "Shatin"
+            },
+            {
+                "city_name": "Sham Shui Po"
+            }
+        ]
+    },
+    {
+        "country_name": "Heard and McDonald Islands",
+        "code": "HM",
+        "cities": []
+    },
+    {
+        "country_name": "Honduras",
+        "code": "HN",
+        "cities": [
+            {
+                "city_name": "San Pedro Sula"
+            },
+            {
+                "city_name": "La Ceiba"
+            },
+            {
+                "city_name": "Ciudad Choluteca"
+            }
+        ]
+    },
+    {
+        "country_name": "Croatia",
+        "code": "HR",
+        "cities": [
+            {
+                "city_name": "Split"
+            },
+            {
+                "city_name": "Rijeka"
+            },
+            {
+                "city_name": "Osijek"
+            }
+        ]
+    },
+    {
+        "country_name": "Haiti",
+        "code": "HT",
+        "cities": [
+            {
+                "city_name": "Port-de-Paix"
+            },
+            {
+                "city_name": "Jacmel"
+            },
+            {
+                "city_name": "Cap-Haïtien"
+            }
+        ]
+    },
+    {
+        "country_name": "Hungary",
+        "code": "HU",
+        "cities": [
+            {
+                "city_name": "Debrecen"
+            },
+            {
+                "city_name": "Szeged"
+            },
+            {
+                "city_name": "Miskolc"
+            }
+        ]
+    },
+    {
+        "country_name": "Indonesia",
+        "code": "ID",
+        "cities": [
+            {
+                "city_name": "Surabaya"
+            },
+            {
+                "city_name": "Bandung"
+            },
+            {
+                "city_name": "Medan"
+            }
+        ]
+    },
+    {
+        "country_name": "Ireland",
+        "code": "IE",
+        "cities": [
+            {
+                "city_name": "Galway"
+            },
+            {
+                "city_name": "Swords"
+            },
+            {
+                "city_name": "Monaghan"
+            }
+        ]
+    },
+    {
+        "country_name": "Israel",
+        "code": "IL",
+        "cities": [
+            {
+                "city_name": "Jerusalem"
+            },
+            {
+                "city_name": "Tel Aviv"
+            },
+            {
+                "city_name": "Haifa"
+            }
+        ]
+    },
+    {
+        "country_name": "Isle of Man",
+        "code": "IM",
+        "cities": [
+            {
+                "city_name": "Ramsey"
+            },
+            {
+                "city_name": "Peel"
+            },
+            {
+                "city_name": "Port Erin"
+            }
+        ]
+    },
+    {
+        "country_name": "India",
+        "code": "IN",
+        "cities": [
+            {
+                "city_name": "Mumbai"
+            },
+            {
+                "city_name": "Delhi"
+            },
+            {
+                "city_name": "Bengaluru"
+            }
+        ]
+    },
+    {
+        "country_name": "British Indian Ocean Territory",
+        "code": "IO",
+        "cities": []
+    },
+    {
+        "country_name": "Iraq",
+        "code": "IQ",
+        "cities": [
+            {
+                "city_name": "Mosul"
+            },
+            {
+                "city_name": "Erbil"
+            },
+            {
+                "city_name": "Basra"
+            }
+        ]
+    },
+    {
+        "country_name": "Iran",
+        "code": "IR",
+        "cities": [
+            {
+                "city_name": "Mashhad"
+            },
+            {
+                "city_name": "Isfahan"
+            },
+            {
+                "city_name": "Karaj"
+            }
+        ]
+    },
+    {
+        "country_name": "Iceland",
+        "code": "IS",
+        "cities": [
+            {
+                "city_name": "Akureyri"
+            },
+            {
+                "city_name": "Keflavik"
+            },
+            {
+                "city_name": "Selfoss"
+            }
+        ]
+    },
+    {
+        "country_name": "Italy",
+        "code": "IT",
+        "cities": [
+            {
+                "city_name": "Milan"
+            },
+            {
+                "city_name": "Naples"
+            },
+            {
+                "city_name": "Turin"
+            }
+        ]
+    },
+    {
+        "country_name": "Jersey",
+        "code": "JE",
+        "cities": [
+            {
+                "city_name": "Le Hocq"
+            }
+        ]
+    },
+    {
+        "country_name": "Jamaica",
+        "code": "JM",
+        "cities": [
+            {
+                "city_name": "Spanish Town"
+            },
+            {
+                "city_name": "Montego Bay"
+            },
+            {
+                "city_name": "Mandeville"
+            }
+        ]
+    },
+    {
+        "country_name": "Jordan",
+        "code": "JO",
+        "cities": [
+            {
+                "city_name": "Zarqa"
+            },
+            {
+                "city_name": "Irbid"
+            },
+            {
+                "city_name": "Ajloun"
+            }
+        ]
+    },
+    {
+        "country_name": "Japan",
+        "code": "JP",
+        "cities": [
+            {
+                "city_name": "Yokohama"
+            },
+            {
+                "city_name": "Osaka"
+            },
+            {
+                "city_name": "Nagoya"
+            }
+        ]
+    },
+    {
+        "country_name": "Kenya",
+        "code": "KE",
+        "cities": [
+            {
+                "city_name": "Kakamega"
+            },
+            {
+                "city_name": "Mombasa"
+            },
+            {
+                "city_name": "Nakuru"
+            }
+        ]
+    },
+    {
+        "country_name": "Kyrgyzstan",
+        "code": "KG",
+        "cities": [
+            {
+                "city_name": "Osh"
+            },
+            {
+                "city_name": "Jalal-Abad"
+            },
+            {
+                "city_name": "Karakol"
+            }
+        ]
+    },
+    {
+        "country_name": "Cambodia",
+        "code": "KH",
+        "cities": [
+            {
+                "city_name": "Takeo"
+            },
+            {
+                "city_name": "Siem Reap"
+            },
+            {
+                "city_name": "Battambang"
+            }
+        ]
+    },
+    {
+        "country_name": "Kiribati",
+        "code": "KI",
+        "cities": []
+    },
+    {
+        "country_name": "Comoros",
+        "code": "KM",
+        "cities": [
+            {
+                "city_name": "Moutsamoudou"
+            },
+            {
+                "city_name": "Fomboni"
+            }
+        ]
+    },
+    {
+        "country_name": "St Kitts and Nevis",
+        "code": "KN",
+        "cities": [
+            {
+                "city_name": "Sandy Point Town"
+            },
+            {
+                "city_name": "Fig Tree"
+            },
+            {
+                "city_name": "Market Shop"
+            }
+        ]
+    },
+    {
+        "country_name": "North Korea",
+        "code": "KP",
+        "cities": [
+            {
+                "city_name": "Hamhung"
+            },
+            {
+                "city_name": "Namp’o"
+            },
+            {
+                "city_name": "Kaesong"
+            }
+        ]
+    },
+    {
+        "country_name": "South Korea",
+        "code": "KR",
+        "cities": [
+            {
+                "city_name": "Busan"
+            },
+            {
+                "city_name": "Incheon"
+            },
+            {
+                "city_name": "Daegu"
+            }
+        ]
+    },
+    {
+        "country_name": "Kuwait",
+        "code": "KW",
+        "cities": [
+            {
+                "city_name": "Al Ahmadi"
+            },
+            {
+                "city_name": "Hawalli"
+            },
+            {
+                "city_name": "Al Farwānīyah"
+            }
+        ]
+    },
+    {
+        "country_name": "Cayman Islands",
+        "code": "KY",
+        "cities": [
+            {
+                "city_name": "West Bay"
+            },
+            {
+                "city_name": "Bodden Town"
+            },
+            {
+                "city_name": "North Side"
+            }
+        ]
+    },
+    {
+        "country_name": "Kazakhstan",
+        "code": "KZ",
+        "cities": [
+            {
+                "city_name": "Almaty"
+            },
+            {
+                "city_name": "Shymkent"
+            },
+            {
+                "city_name": "Aktobe"
+            }
+        ]
+    },
+    {
+        "country_name": "Laos",
+        "code": "LA",
+        "cities": [
+            {
+                "city_name": "Savannakhet"
+            },
+            {
+                "city_name": "Pakse"
+            },
+            {
+                "city_name": "Thakhek"
+            }
+        ]
+    },
+    {
+        "country_name": "Lebanon",
+        "code": "LB",
+        "cities": [
+            {
+                "city_name": "Tripoli"
+            },
+            {
+                "city_name": "Sidon"
+            },
+            {
+                "city_name": "Nabatîyé et Tahta"
+            }
+        ]
+    },
+    {
+        "country_name": "Saint Lucia",
+        "code": "LC",
+        "cities": [
+            {
+                "city_name": "Gros Islet"
+            },
+            {
+                "city_name": "Dennery"
+            },
+            {
+                "city_name": "Laborie"
+            }
+        ]
+    },
+    {
+        "country_name": "Liechtenstein",
+        "code": "LI",
+        "cities": [
+            {
+                "city_name": "Schaan"
+            },
+            {
+                "city_name": "Triesen"
+            },
+            {
+                "city_name": "Balzers"
+            }
+        ]
+    },
+    {
+        "country_name": "Sri Lanka",
+        "code": "LK",
+        "cities": [
+            {
+                "city_name": "Jaffna"
+            },
+            {
+                "city_name": "Kandy"
+            },
+            {
+                "city_name": "Trincomalee"
+            }
+        ]
+    },
+    {
+        "country_name": "Liberia",
+        "code": "LR",
+        "cities": [
+            {
+                "city_name": "Gbarnga"
+            },
+            {
+                "city_name": "Buchanan"
+            },
+            {
+                "city_name": "Kakata"
+            }
+        ]
+    },
+    {
+        "country_name": "Lesotho",
+        "code": "LS",
+        "cities": [
+            {
+                "city_name": "Mohales Hoek"
+            },
+            {
+                "city_name": "Mafeteng"
+            },
+            {
+                "city_name": "Hlotse"
+            }
+        ]
+    },
+    {
+        "country_name": "Lithuania",
+        "code": "LT",
+        "cities": [
+            {
+                "city_name": "Kaunas"
+            },
+            {
+                "city_name": "Klaipėda"
+            },
+            {
+                "city_name": "Šiauliai"
+            }
+        ]
+    },
+    {
+        "country_name": "Luxembourg",
+        "code": "LU",
+        "cities": [
+            {
+                "city_name": "Diekirch"
+            },
+            {
+                "city_name": "Grevenmacher"
+            },
+            {
+                "city_name": "Wiltz"
+            }
+        ]
+    },
+    {
+        "country_name": "Latvia",
+        "code": "LV",
+        "cities": [
+            {
+                "city_name": "Daugavpils"
+            },
+            {
+                "city_name": "Liepāja"
+            },
+            {
+                "city_name": "Jelgava"
+            }
+        ]
+    },
+    {
+        "country_name": "Libya",
+        "code": "LY",
+        "cities": [
+            {
+                "city_name": "Benghazi"
+            },
+            {
+                "city_name": "Misratah"
+            },
+            {
+                "city_name": "Al Khums"
+            }
+        ]
+    },
+    {
+        "country_name": "Morocco",
+        "code": "MA",
+        "cities": [
+            {
+                "city_name": "Casablanca"
+            },
+            {
+                "city_name": "Fes"
+            },
+            {
+                "city_name": "Tangier"
+            }
+        ]
+    },
+    {
+        "country_name": "Monaco",
+        "code": "MC",
+        "cities": []
+    },
+    {
+        "country_name": "Moldova",
+        "code": "MD",
+        "cities": [
+            {
+                "city_name": "Tiraspol"
+            },
+            {
+                "city_name": "Bălţi"
+            },
+            {
+                "city_name": "Tighina"
+            }
+        ]
+    },
+    {
+        "country_name": "Montenegro",
+        "code": "ME",
+        "cities": [
+            {
+                "city_name": "Nikšić"
+            },
+            {
+                "city_name": "Herceg Novi"
+            },
+            {
+                "city_name": "Pljevlja"
+            }
+        ]
+    },
+    {
+        "country_name": "Saint Martin",
+        "code": "MF",
+        "cities": []
+    },
+    {
+        "country_name": "Madagascar",
+        "code": "MG",
+        "cities": [
+            {
+                "city_name": "Toamasina"
+            },
+            {
+                "city_name": "Antsirabe"
+            },
+            {
+                "city_name": "Mahajanga"
+            }
+        ]
+    },
+    {
+        "country_name": "Marshall Islands",
+        "code": "MH",
+        "cities": [
+            {
+                "city_name": "Ebaye"
+            },
+            {
+                "city_name": "Arno"
+            },
+            {
+                "city_name": "Jabor"
+            }
+        ]
+    },
+    {
+        "country_name": "North Macedonia",
+        "code": "MK",
+        "cities": [
+            {
+                "city_name": "Kumanovo"
+            },
+            {
+                "city_name": "Prilep"
+            },
+            {
+                "city_name": "Bitola"
+            }
+        ]
+    },
+    {
+        "country_name": "Mali",
+        "code": "ML",
+        "cities": [
+            {
+                "city_name": "Sikasso"
+            },
+            {
+                "city_name": "Ségou"
+            },
+            {
+                "city_name": "Kayes"
+            }
+        ]
+    },
+    {
+        "country_name": "Myanmar",
+        "code": "MM",
+        "cities": [
+            {
+                "city_name": "Yangon"
+            },
+            {
+                "city_name": "Mandalay"
+            },
+            {
+                "city_name": "Mawlamyine"
+            }
+        ]
+    },
+    {
+        "country_name": "Mongolia",
+        "code": "MN",
+        "cities": [
+            {
+                "city_name": "Erdenet"
+            },
+            {
+                "city_name": "Darkhan"
+            },
+            {
+                "city_name": "Mörön"
+            }
+        ]
+    },
+    {
+        "country_name": "Macao",
+        "code": "MO",
+        "cities": []
+    },
+    {
+        "country_name": "Northern Mariana Islands",
+        "code": "MP",
+        "cities": [
+            {
+                "city_name": "San Jose"
+            }
+        ]
+    },
+    {
+        "country_name": "Martinique",
+        "code": "MQ",
+        "cities": []
+    },
+    {
+        "country_name": "Mauritania",
+        "code": "MR",
+        "cities": [
+            {
+                "city_name": "Nouadhibou"
+            },
+            {
+                "city_name": "Kiffa"
+            },
+            {
+                "city_name": "Dar Naim"
+            }
+        ]
+    },
+    {
+        "country_name": "Montserrat",
+        "code": "MS",
+        "cities": [
+            {
+                "city_name": "Saint Peters"
+            }
+        ]
+    },
+    {
+        "country_name": "Malta",
+        "code": "MT",
+        "cities": [
+            {
+                "city_name": "San Pawl il-Baħar"
+            },
+            {
+                "city_name": "Birkirkara"
+            },
+            {
+                "city_name": "Mosta"
+            }
+        ]
+    },
+    {
+        "country_name": "Mauritius",
+        "code": "MU",
+        "cities": [
+            {
+                "city_name": "Beau Bassin-Rose Hill"
+            },
+            {
+                "city_name": "Centre de Flacq"
+            },
+            {
+                "city_name": "Rose Belle"
+            }
+        ]
+    },
+    {
+        "country_name": "Maldives",
+        "code": "MV",
+        "cities": [
+            {
+                "city_name": "Fuvahmulah"
+            },
+            {
+                "city_name": "Hithadhoo"
+            },
+            {
+                "city_name": "Kulhudhuffushi"
+            }
+        ]
+    },
+    {
+        "country_name": "Malawi",
+        "code": "MW",
+        "cities": [
+            {
+                "city_name": "Blantyre"
+            },
+            {
+                "city_name": "Mzuzu"
+            }
+        ]
+    },
+    {
+        "country_name": "Mexico",
+        "code": "MX",
+        "cities": [
+            {
+                "city_name": "Puebla City"
+            },
+            {
+                "city_name": "Querétaro City"
+            },
+            {
+                "city_name": "Guadalajara"
+            }
+        ]
+    },
+    {
+        "country_name": "Malaysia",
+        "code": "MY",
+        "cities": [
+            {
+                "city_name": "Johor Bahru"
+            },
+            {
+                "city_name": "Ipoh"
+            },
+            {
+                "city_name": "Malacca"
+            }
+        ]
+    },
+    {
+        "country_name": "Mozambique",
+        "code": "MZ",
+        "cities": [
+            {
+                "city_name": "Matola"
+            },
+            {
+                "city_name": "Nampula"
+            },
+            {
+                "city_name": "Beira"
+            }
+        ]
+    },
+    {
+        "country_name": "Namibia",
+        "code": "NA",
+        "cities": [
+            {
+                "city_name": "Rundu"
+            },
+            {
+                "city_name": "Swakopmund"
+            },
+            {
+                "city_name": "Oshakati"
+            }
+        ]
+    },
+    {
+        "country_name": "New Caledonia",
+        "code": "NC",
+        "cities": [
+            {
+                "city_name": "Wé"
+            },
+            {
+                "city_name": "Koné"
+            },
+            {
+                "city_name": "La Foa"
+            }
+        ]
+    },
+    {
+        "country_name": "Niger",
+        "code": "NE",
+        "cities": [
+            {
+                "city_name": "Maradi"
+            },
+            {
+                "city_name": "Zinder"
+            },
+            {
+                "city_name": "Tahoua"
+            }
+        ]
+    },
+    {
+        "country_name": "Norfolk Island",
+        "code": "NF",
+        "cities": []
+    },
+    {
+        "country_name": "Nigeria",
+        "code": "NG",
+        "cities": [
+            {
+                "city_name": "Kano"
+            },
+            {
+                "city_name": "Ibadan"
+            },
+            {
+                "city_name": "Port Harcourt"
+            }
+        ]
+    },
+    {
+        "country_name": "Nicaragua",
+        "code": "NI",
+        "cities": [
+            {
+                "city_name": "León"
+            },
+            {
+                "city_name": "Masaya"
+            },
+            {
+                "city_name": "Chinandega"
+            }
+        ]
+    },
+    {
+        "country_name": "The Netherlands",
+        "code": "NL",
+        "cities": [
+            {
+                "city_name": "Utrecht"
+            },
+            {
+                "city_name": "Groningen"
+            },
+            {
+                "city_name": "Haarlem"
+            }
+        ]
+    },
+    {
+        "country_name": "Norway",
+        "code": "NO",
+        "cities": [
+            {
+                "city_name": "Bergen"
+            },
+            {
+                "city_name": "Stavanger"
+            },
+            {
+                "city_name": "Drammen"
+            }
+        ]
+    },
+    {
+        "country_name": "Nepal",
+        "code": "NP",
+        "cities": [
+            {
+                "city_name": "Pokhara"
+            },
+            {
+                "city_name": "Janakpur Dham"
+            },
+            {
+                "city_name": "Butwāl"
+            }
+        ]
+    },
+    {
+        "country_name": "Nauru",
+        "code": "NR",
+        "cities": [
+            {
+                "city_name": "Baitsi District"
+            },
+            {
+                "city_name": "Anabar"
+            },
+            {
+                "city_name": "Uaboe"
+            }
+        ]
+    },
+    {
+        "country_name": "Niue",
+        "code": "NU",
+        "cities": []
+    },
+    {
+        "country_name": "New Zealand",
+        "code": "NZ",
+        "cities": [
+            {
+                "city_name": "Auckland"
+            },
+            {
+                "city_name": "Christchurch"
+            },
+            {
+                "city_name": "Hamilton"
+            }
+        ]
+    },
+    {
+        "country_name": "Oman",
+        "code": "OM",
+        "cities": [
+            {
+                "city_name": "Salalah"
+            },
+            {
+                "city_name": "Sohar"
+            },
+            {
+                "city_name": "Buraimi"
+            }
+        ]
+    },
+    {
+        "country_name": "Panama",
+        "code": "PA",
+        "cities": [
+            {
+                "city_name": "David"
+            },
+            {
+                "city_name": "Colón"
+            },
+            {
+                "city_name": "La Chorrera"
+            }
+        ]
+    },
+    {
+        "country_name": "Peru",
+        "code": "PE",
+        "cities": [
+            {
+                "city_name": "Callao"
+            },
+            {
+                "city_name": "Arequipa"
+            },
+            {
+                "city_name": "Trujillo"
+            }
+        ]
+    },
+    {
+        "country_name": "French Polynesia",
+        "code": "PF",
+        "cities": [
+            {
+                "city_name": "Uturoa"
+            },
+            {
+                "city_name": "Taiohae"
+            }
+        ]
+    },
+    {
+        "country_name": "Papua New Guinea",
+        "code": "PG",
+        "cities": [
+            {
+                "city_name": "Lae"
+            },
+            {
+                "city_name": "Mt Hagen"
+            },
+            {
+                "city_name": "Popondetta"
+            }
+        ]
+    },
+    {
+        "country_name": "Philippines",
+        "code": "PH",
+        "cities": [
+            {
+                "city_name": "Davao City"
+            },
+            {
+                "city_name": "Cebu City"
+            },
+            {
+                "city_name": "Calamba"
+            }
+        ]
+    },
+    {
+        "country_name": "Pakistan",
+        "code": "PK",
+        "cities": [
+            {
+                "city_name": "Karachi"
+            },
+            {
+                "city_name": "Lahore"
+            },
+            {
+                "city_name": "Peshawar"
+            }
+        ]
+    },
+    {
+        "country_name": "Poland",
+        "code": "PL",
+        "cities": [
+            {
+                "city_name": "Lodz"
+            },
+            {
+                "city_name": "Krakow"
+            },
+            {
+                "city_name": "Wroclaw"
+            }
+        ]
+    },
+    {
+        "country_name": "Saint Pierre and Miquelon",
+        "code": "PM",
+        "cities": [
+            {
+                "city_name": "Miquelon"
+            }
+        ]
+    },
+    {
+        "country_name": "Pitcairn Islands",
+        "code": "PN",
+        "cities": []
+    },
+    {
+        "country_name": "Puerto Rico",
+        "code": "PR",
+        "cities": [
+            {
+                "city_name": "Bayamón"
+            },
+            {
+                "city_name": "Carolina"
+            },
+            {
+                "city_name": "Ponce"
+            }
+        ]
+    },
+    {
+        "country_name": "Palestine",
+        "code": "PS",
+        "cities": [
+            {
+                "city_name": "Gaza"
+            },
+            {
+                "city_name": "Jericho"
+            }
+        ]
+    },
+    {
+        "country_name": "Portugal",
+        "code": "PT",
+        "cities": [
+            {
+                "city_name": "Porto"
+            },
+            {
+                "city_name": "Braga"
+            },
+            {
+                "city_name": "Setúbal"
+            }
+        ]
+    },
+    {
+        "country_name": "Palau",
+        "code": "PW",
+        "cities": [
+            {
+                "city_name": "Koror"
+            },
+            {
+                "city_name": "Kloulklubed"
+            },
+            {
+                "city_name": "Ulimang"
+            }
+        ]
+    },
+    {
+        "country_name": "Paraguay",
+        "code": "PY",
+        "cities": [
+            {
+                "city_name": "Ciudad del Este"
+            },
+            {
+                "city_name": "Pedro Juan Caballero"
+            },
+            {
+                "city_name": "Encarnación"
+            }
+        ]
+    },
+    {
+        "country_name": "Qatar",
+        "code": "QA",
+        "cities": [
+            {
+                "city_name": "Al Rayyan"
+            },
+            {
+                "city_name": "Al Wakrah"
+            },
+            {
+                "city_name": "Al Khor"
+            }
+        ]
+    },
+    {
+        "country_name": "Réunion",
+        "code": "RE",
+        "cities": []
+    },
+    {
+        "country_name": "Romania",
+        "code": "RO",
+        "cities": [
+            {
+                "city_name": "Iasi"
+            },
+            {
+                "city_name": "Constanța"
+            },
+            {
+                "city_name": "Cluj-Napoca"
+            }
+        ]
+    },
+    {
+        "country_name": "Serbia",
+        "code": "RS",
+        "cities": [
+            {
+                "city_name": "Novi Sad"
+            }
+        ]
+    },
+    {
+        "country_name": "Russia",
+        "code": "RU",
+        "cities": [
+            {
+                "city_name": "St Petersburg"
+            },
+            {
+                "city_name": "Novosibirsk"
+            },
+            {
+                "city_name": "Yekaterinburg"
+            }
+        ]
+    },
+    {
+        "country_name": "Rwanda",
+        "code": "RW",
+        "cities": [
+            {
+                "city_name": "Byumba"
+            },
+            {
+                "city_name": "Kibuye"
+            },
+            {
+                "city_name": "Rwamagana"
+            }
+        ]
+    },
+    {
+        "country_name": "Saudi Arabia",
+        "code": "SA",
+        "cities": [
+            {
+                "city_name": "Makkah"
+            },
+            {
+                "city_name": "Medina"
+            },
+            {
+                "city_name": "Dammam"
+            }
+        ]
+    },
+    {
+        "country_name": "Solomon Islands",
+        "code": "SB",
+        "cities": [
+            {
+                "city_name": "Auki"
+            },
+            {
+                "city_name": "Gizo"
+            },
+            {
+                "city_name": "Kirakira"
+            }
+        ]
+    },
+    {
+        "country_name": "Seychelles",
+        "code": "SC",
+        "cities": [
+            {
+                "city_name": "Anse Boileau"
+            },
+            {
+                "city_name": "Bel Ombre"
+            },
+            {
+                "city_name": "Beau Vallon"
+            }
+        ]
+    },
+    {
+        "country_name": "Sudan",
+        "code": "SD",
+        "cities": [
+            {
+                "city_name": "Nyala"
+            },
+            {
+                "city_name": "Port Sudan"
+            },
+            {
+                "city_name": "Kassala"
+            }
+        ]
+    },
+    {
+        "country_name": "Sweden",
+        "code": "SE",
+        "cities": [
+            {
+                "city_name": "Gothenburg"
+            },
+            {
+                "city_name": "Malmo"
+            },
+            {
+                "city_name": "Uppsala"
+            }
+        ]
+    },
+    {
+        "country_name": "Singapore",
+        "code": "SG",
+        "cities": []
+    },
+    {
+        "country_name": "Saint Helena",
+        "code": "SH",
+        "cities": [
+            {
+                "city_name": "Georgetown"
+            },
+            {
+                "city_name": "Edinburgh of the Seven Seas"
+            }
+        ]
+    },
+    {
+        "country_name": "Slovenia",
+        "code": "SI",
+        "cities": [
+            {
+                "city_name": "Maribor"
+            },
+            {
+                "city_name": "Kranj"
+            },
+            {
+                "city_name": "Celje"
+            }
+        ]
+    },
+    {
+        "country_name": "Svalbard and Jan Mayen",
+        "code": "SJ",
+        "cities": [
+            {
+                "city_name": "Olonkinbyen"
+            }
+        ]
+    },
+    {
+        "country_name": "Slovakia",
+        "code": "SK",
+        "cities": [
+            {
+                "city_name": "Košice"
+            },
+            {
+                "city_name": "Nitra"
+            },
+            {
+                "city_name": "Prešov"
+            }
+        ]
+    },
+    {
+        "country_name": "Sierra Leone",
+        "code": "SL",
+        "cities": [
+            {
+                "city_name": "Bo"
+            },
+            {
+                "city_name": "Kenema"
+            },
+            {
+                "city_name": "Makeni"
+            }
+        ]
+    },
+    {
+        "country_name": "San Marino",
+        "code": "SM",
+        "cities": [
+            {
+                "city_name": "Serravalle"
+            },
+            {
+                "city_name": "Borgo Maggiore"
+            },
+            {
+                "city_name": "Domagnano"
+            }
+        ]
+    },
+    {
+        "country_name": "Senegal",
+        "code": "SN",
+        "cities": [
+            {
+                "city_name": "Kaolack"
+            },
+            {
+                "city_name": "Saint-Louis"
+            },
+            {
+                "city_name": "Ziguinchor"
+            }
+        ]
+    },
+    {
+        "country_name": "Somalia",
+        "code": "SO",
+        "cities": [
+            {
+                "city_name": "Hargeisa"
+            },
+            {
+                "city_name": "Kismayo"
+            },
+            {
+                "city_name": "Merca"
+            }
+        ]
+    },
+    {
+        "country_name": "Suriname",
+        "code": "SR",
+        "cities": [
+            {
+                "city_name": "Lelydorp"
+            },
+            {
+                "city_name": "Brokopondo"
+            },
+            {
+                "city_name": "Nieuw Nickerie"
+            }
+        ]
+    },
+    {
+        "country_name": "South Sudan",
+        "code": "SS",
+        "cities": [
+            {
+                "city_name": "Malakal"
+            },
+            {
+                "city_name": "Wau"
+            },
+            {
+                "city_name": "Kuacjok"
+            }
+        ]
+    },
+    {
+        "country_name": "São Tomé and Príncipe",
+        "code": "ST",
+        "cities": [
+            {
+                "city_name": "Santo António"
+            }
+        ]
+    },
+    {
+        "country_name": "El Salvador",
+        "code": "SV",
+        "cities": [
+            {
+                "city_name": "San Miguel"
+            },
+            {
+                "city_name": "Santa Ana"
+            },
+            {
+                "city_name": "Santa Tecla"
+            }
+        ]
+    },
+    {
+        "country_name": "Sint Maarten",
+        "code": "SX",
+        "cities": []
+    },
+    {
+        "country_name": "Syria",
+        "code": "SY",
+        "cities": [
+            {
+                "city_name": "Aleppo"
+            },
+            {
+                "city_name": "Homs"
+            },
+            {
+                "city_name": "Latakia"
+            }
+        ]
+    },
+    {
+        "country_name": "Eswatini",
+        "code": "SZ",
+        "cities": [
+            {
+                "city_name": "Manzini"
+            },
+            {
+                "city_name": "Nhlangano"
+            },
+            {
+                "city_name": "Siteki"
+            }
+        ]
+    },
+    {
+        "country_name": "Turks and Caicos Islands",
+        "code": "TC",
+        "cities": []
+    },
+    {
+        "country_name": "Chad",
+        "code": "TD",
+        "cities": [
+            {
+                "city_name": "Moundou"
+            },
+            {
+                "city_name": "Abéché"
+            },
+            {
+                "city_name": "Sarh"
+            }
+        ]
+    },
+    {
+        "country_name": "French Southern Territories",
+        "code": "TF",
+        "cities": []
+    },
+    {
+        "country_name": "Togo",
+        "code": "TG",
+        "cities": [
+            {
+                "city_name": "Sokodé"
+            },
+            {
+                "city_name": "Kara"
+            },
+            {
+                "city_name": "Atakpamé"
+            }
+        ]
+    },
+    {
+        "country_name": "Thailand",
+        "code": "TH",
+        "cities": [
+            {
+                "city_name": "Mueang Samut Prakan"
+            },
+            {
+                "city_name": "Nonthaburi"
+            },
+            {
+                "city_name": "Chon Buri"
+            }
+        ]
+    },
+    {
+        "country_name": "Tajikistan",
+        "code": "TJ",
+        "cities": [
+            {
+                "city_name": "Khujand"
+            },
+            {
+                "city_name": "Kurgan-Tyube"
+            },
+            {
+                "city_name": "Khorugh"
+            }
+        ]
+    },
+    {
+        "country_name": "Tokelau",
+        "code": "TK",
+        "cities": [
+            {
+                "city_name": "Atafu"
+            },
+            {
+                "city_name": "Nukunonu"
+            },
+            {
+                "city_name": "Fale old settlement"
+            }
+        ]
+    },
+    {
+        "country_name": "Timor-Leste",
+        "code": "TL",
+        "cities": [
+            {
+                "city_name": "Maliana"
+            },
+            {
+                "city_name": "Suai"
+            },
+            {
+                "city_name": "Likisá"
+            }
+        ]
+    },
+    {
+        "country_name": "Turkmenistan",
+        "code": "TM",
+        "cities": [
+            {
+                "city_name": "Turkmenabat"
+            },
+            {
+                "city_name": "Daşoguz"
+            },
+            {
+                "city_name": "Mary"
+            }
+        ]
+    },
+    {
+        "country_name": "Tunisia",
+        "code": "TN",
+        "cities": [
+            {
+                "city_name": "Sfax"
+            },
+            {
+                "city_name": "Sousse"
+            },
+            {
+                "city_name": "Kairouan"
+            }
+        ]
+    },
+    {
+        "country_name": "Tonga",
+        "code": "TO",
+        "cities": [
+            {
+                "city_name": "Neiafu"
+            },
+            {
+                "city_name": "Pangai"
+            },
+            {
+                "city_name": "‘Ohonua"
+            }
+        ]
+    },
+    {
+        "country_name": "Türkiye",
+        "code": "TR",
+        "cities": [
+            {
+                "city_name": "Istanbul"
+            },
+            {
+                "city_name": "Bursa"
+            },
+            {
+                "city_name": "Izmir"
+            }
+        ]
+    },
+    {
+        "country_name": "Trinidad and Tobago",
+        "code": "TT",
+        "cities": [
+            {
+                "city_name": "Chaguanas"
+            },
+            {
+                "city_name": "San Fernando"
+            },
+            {
+                "city_name": "Rio Claro"
+            }
+        ]
+    },
+    {
+        "country_name": "Tuvalu",
+        "code": "TV",
+        "cities": [
+            {
+                "city_name": "Savave Village"
+            },
+            {
+                "city_name": "Tanrake Village"
+            },
+            {
+                "city_name": "Toga Village"
+            }
+        ]
+    },
+    {
+        "country_name": "Taiwan",
+        "code": "TW",
+        "cities": [
+            {
+                "city_name": "Kaohsiung"
+            },
+            {
+                "city_name": "Jincheng"
+            },
+            {
+                "city_name": "Zhongxing New Village"
+            }
+        ]
+    },
+    {
+        "country_name": "Tanzania",
+        "code": "TZ",
+        "cities": [
+            {
+                "city_name": "Dar es Salaam"
+            },
+            {
+                "city_name": "Mwanza"
+            },
+            {
+                "city_name": "Zanzibar"
+            }
+        ]
+    },
+    {
+        "country_name": "Ukraine",
+        "code": "UA",
+        "cities": [
+            {
+                "city_name": "Kharkiv"
+            },
+            {
+                "city_name": "Odesa"
+            },
+            {
+                "city_name": "Dnipro"
+            }
+        ]
+    },
+    {
+        "country_name": "Uganda",
+        "code": "UG",
+        "cities": [
+            {
+                "city_name": "Mbarara"
+            },
+            {
+                "city_name": "Gulu"
+            },
+            {
+                "city_name": "Jinja"
+            }
+        ]
+    },
+    {
+        "country_name": "U.S. Outlying Islands",
+        "code": "UM",
+        "cities": []
+    },
+    {
+        "country_name": "United States",
+        "code": "US",
+        "cities": [
+            {
+                "city_name": "Phoenix"
+            },
+            {
+                "city_name": "Austin"
+            },
+            {
+                "city_name": "Columbus"
+            }
+        ]
+    },
+    {
+        "country_name": "Uruguay",
+        "code": "UY",
+        "cities": [
+            {
+                "city_name": "Salto"
+            },
+            {
+                "city_name": "Paysandú"
+            },
+            {
+                "city_name": "Rivera"
+            }
+        ]
+    },
+    {
+        "country_name": "Uzbekistan",
+        "code": "UZ",
+        "cities": [
+            {
+                "city_name": "Namangan"
+            },
+            {
+                "city_name": "Samarkand"
+            },
+            {
+                "city_name": "Andijan"
+            }
+        ]
+    },
+    {
+        "country_name": "Vatican City",
+        "code": "VA",
+        "cities": []
+    },
+    {
+        "country_name": "St Vincent and Grenadines",
+        "code": "VC",
+        "cities": [
+            {
+                "city_name": "Georgetown"
+            },
+            {
+                "city_name": "Barrouallie"
+            },
+            {
+                "city_name": "Port Elizabeth"
+            }
+        ]
+    },
+    {
+        "country_name": "Venezuela",
+        "code": "VE",
+        "cities": [
+            {
+                "city_name": "Maracaibo"
+            },
+            {
+                "city_name": "Maracay"
+            },
+            {
+                "city_name": "Valencia"
+            }
+        ]
+    },
+    {
+        "country_name": "British Virgin Islands",
+        "code": "VG",
+        "cities": []
+    },
+    {
+        "country_name": "U.S. Virgin Islands",
+        "code": "VI",
+        "cities": [
+            {
+                "city_name": "St Croix"
+            },
+            {
+                "city_name": "Cruz Bay"
+            }
+        ]
+    },
+    {
+        "country_name": "Vietnam",
+        "code": "VN",
+        "cities": [
+            {
+                "city_name": "Ho Chi Minh City"
+            },
+            {
+                "city_name": "Da Nang"
+            },
+            {
+                "city_name": "Haiphong"
+            }
+        ]
+    },
+    {
+        "country_name": "Vanuatu",
+        "code": "VU",
+        "cities": [
+            {
+                "city_name": "Luganville"
+            },
+            {
+                "city_name": "Isangel"
+            },
+            {
+                "city_name": "Sola"
+            }
+        ]
+    },
+    {
+        "country_name": "Wallis and Futuna",
+        "code": "WF",
+        "cities": [
+            {
+                "city_name": "Leava"
+            },
+            {
+                "city_name": "Alo"
+            }
+        ]
+    },
+    {
+        "country_name": "Samoa",
+        "code": "WS",
+        "cities": [
+            {
+                "city_name": "Asau"
+            },
+            {
+                "city_name": "Mulifanua"
+            },
+            {
+                "city_name": "Afega"
+            }
+        ]
+    },
+    {
+        "country_name": "Kosovo",
+        "code": "XK",
+        "cities": [
+            {
+                "city_name": "Prizren"
+            },
+            {
+                "city_name": "Mitrovica"
+            },
+            {
+                "city_name": "Gjakova"
+            }
+        ]
+    },
+    {
+        "country_name": "Yemen",
+        "code": "YE",
+        "cities": [
+            {
+                "city_name": "Aden"
+            },
+            {
+                "city_name": "Al Hudaydah"
+            },
+            {
+                "city_name": "Taiz"
+            }
+        ]
+    },
+    {
+        "country_name": "Mayotte",
+        "code": "YT",
+        "cities": [
+            {
+                "city_name": "Koungou"
+            },
+            {
+                "city_name": "Dzaoudzi"
+            },
+            {
+                "city_name": "Pamandzi"
+            }
+        ]
+    },
+    {
+        "country_name": "South Africa",
+        "code": "ZA",
+        "cities": [
+            {
+                "city_name": "Johannesburg"
+            },
+            {
+                "city_name": "Cape Town"
+            },
+            {
+                "city_name": "Pietermaritzburg"
+            }
+        ]
+    },
+    {
+        "country_name": "Zambia",
+        "code": "ZM",
+        "cities": [
+            {
+                "city_name": "Ndola"
+            },
+            {
+                "city_name": "Chipata"
+            },
+            {
+                "city_name": "Solwezi"
+            }
+        ]
+    },
+    {
+        "country_name": "Zimbabwe",
+        "code": "ZW",
+        "cities": [
+            {
+                "city_name": "Bulawayo"
+            },
+            {
+                "city_name": "Mutare"
+            },
+            {
+                "city_name": "Gweru"
+            }
+        ]
+    }
+]
