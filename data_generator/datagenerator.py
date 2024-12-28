@@ -2,6 +2,8 @@ import pyodbc
 import json
 import people.languages
 import people.roles
+import studies
+import studies.grades
 
 path_to_json_file = "database_credentials.json"
 
@@ -34,6 +36,7 @@ def main():
 
         people.roles.fill_roles(cursor)
         people.languages.fill_languages(cursor)
+        studies.grades.fill_grades(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
