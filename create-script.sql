@@ -15,7 +15,7 @@ CREATE TABLE Addresses (
 CREATE TABLE Cities (
     CityID int  NOT NULL,
     CountryID int  NOT NULL,
-    CityName varchar(20)  NOT NULL,
+    CityName varchar(50)  NOT NULL,
     CONSTRAINT unique_city_country_combination UNIQUE (CountryID, CityName),
     CONSTRAINT Cities_pk PRIMARY KEY  (CityID)
 );
@@ -33,7 +33,7 @@ CREATE TABLE Classrooms (
 -- Table: Countries
 CREATE TABLE Countries (
     CountryID int  NOT NULL,
-    CountryName varchar(20)  NOT NULL,
+    CountryName varchar(50)  NOT NULL,
     CONSTRAINT unique_country_name UNIQUE (CountryName),
     CONSTRAINT Countries_pk PRIMARY KEY  (CountryID)
 );
