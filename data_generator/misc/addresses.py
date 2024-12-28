@@ -41,6 +41,7 @@ for _ in range(1000):
 
 
 def fill_addresses(cursor: pyodbc.Cursor):
+    clear_addresses(cursor)
     def insert_address(id: int, city: int, name: str, postcode: str):
         sql_insert = f"insert into dbo.Addresses (addressID, cityID, street, zipCode) values ({str(id)}, {str(city)} , '{name.replace("'", "")}', '{postcode}')"
         cursor.execute(sql_insert)
@@ -48,5 +49,5 @@ def fill_addresses(cursor: pyodbc.Cursor):
     for i, street in enumerate(street_data_english):
         insert_address(i + 1, random.randint(1, 621), street["street_name"], street["postcode"])
 
-
-print(street_data_english)  # Wyświetlamy tylko pierwsze 10 wyników jako próbkę
+def clear_addresses(cursor: pyodbc.Cursor):
+    cursor.execute("delete from dbo.Addresses")
