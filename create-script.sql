@@ -353,312 +353,374 @@ CREATE TABLE WebinarsAttendance (
 -- Reference: Addresses_City (table: Addresses)
 ALTER TABLE Addresses ADD CONSTRAINT Addresses_City
     FOREIGN KEY (CityID)
-    REFERENCES Cities (CityID);
+    REFERENCES Cities (CityID)
+    ON DELETE CASCADE;
 
 -- Reference: City_Country (table: Cities)
 ALTER TABLE Cities ADD CONSTRAINT City_Country
     FOREIGN KEY (CountryID)
-    REFERENCES Countries (CountryID);
+    REFERENCES Countries (CountryID)
+    ON DELETE CASCADE;
 
 -- Reference: Classrooms_Addresses (table: Classrooms)
 ALTER TABLE Classrooms ADD CONSTRAINT Classrooms_Addresses
     FOREIGN KEY (AddressID)
-    REFERENCES Addresses (AddressID);
+    REFERENCES Addresses (AddressID)
+    ON DELETE CASCADE;
 
 -- Reference: Copy_of_CoursesMeetings_Employees (table: CoursesMeetings)
 ALTER TABLE CoursesMeetings ADD CONSTRAINT Copy_of_CoursesMeetings_Employees
     FOREIGN KEY (CourseInstructorID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: CoursesAttendance_CoursesMeetings (table: CoursesAttendance)
 ALTER TABLE CoursesAttendance ADD CONSTRAINT CoursesAttendance_CoursesMeetings
     FOREIGN KEY (CourseMeetingID)
-    REFERENCES CoursesMeetings (MeetingID);
+    REFERENCES CoursesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: CoursesAttendance_Users (table: CoursesAttendance)
 ALTER TABLE CoursesAttendance ADD CONSTRAINT CoursesAttendance_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: CoursesMeetings_Courses (table: CoursesMeetings)
 ALTER TABLE CoursesMeetings ADD CONSTRAINT CoursesMeetings_Courses
     FOREIGN KEY (CourseID)
-    REFERENCES Courses (CourseID);
+    REFERENCES Courses (CourseID)
+    ON DELETE CASCADE;
 
 -- Reference: Courses_Employees (table: Courses)
 ALTER TABLE Courses ADD CONSTRAINT Courses_Employees
     FOREIGN KEY (CourseCoordinatorID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: Courses_Translators (table: Courses)
 ALTER TABLE Courses ADD CONSTRAINT Courses_Translators
     FOREIGN KEY (TranslatorLanguageID)
-    REFERENCES Translators (TranslatorLanguageID);
+    REFERENCES Translators (TranslatorLanguageID)
+    ON DELETE CASCADE;
 
 -- Reference: EmployeeRoles_Employees (table: EmployeeRoles)
 ALTER TABLE EmployeeRoles ADD CONSTRAINT EmployeeRoles_Employees
     FOREIGN KEY (EmployeeID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: EmployeeRoles_Roles (table: EmployeeRoles)
 ALTER TABLE EmployeeRoles ADD CONSTRAINT EmployeeRoles_Roles
     FOREIGN KEY (RoleID)
-    REFERENCES Roles (RoleID);
+    REFERENCES Roles (RoleID)
+    ON DELETE CASCADE;
 
 -- Reference: Employees_Addresses (table: Employees)
 ALTER TABLE Employees ADD CONSTRAINT Employees_Addresses
     FOREIGN KEY (AddressID)
-    REFERENCES Addresses (AddressID);
+    REFERENCES Addresses (AddressID)
+    ON DELETE CASCADE;
 
 -- Reference: FinalExams_Grades (table: FinalExams)
 ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Grades
     FOREIGN KEY (GradeID)
-    REFERENCES Grades (GradeID);
+    REFERENCES Grades (GradeID)
+    ON DELETE CASCADE;
 
 -- Reference: FinalExams_Studies (table: FinalExams)
 ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Studies
     FOREIGN KEY (StudyID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: FinalExams_Users (table: FinalExams)
 ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_Courses (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_Courses
     FOREIGN KEY (ServiceID)
-    REFERENCES Courses (CourseID);
+    REFERENCES Courses (CourseID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_ServiceTypes (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_ServiceTypes
     FOREIGN KEY (ServiceTypeID)
-    REFERENCES ServiceTypes (ServiceTypeID);
+    REFERENCES ServiceTypes (ServiceTypeID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_Studies (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_Studies
     FOREIGN KEY (ServiceID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_StudyMeetup (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_StudyMeetup
     FOREIGN KEY (ServiceID)
-    REFERENCES StudyMeetups (StudyMeetupID);
+    REFERENCES StudyMeetups (StudyMeetupID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_Users (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_Webinars (table: HeadTeacherPaymentPostponements)
 ALTER TABLE HeadTeacherPaymentPostponements ADD CONSTRAINT HeadTeacherPaymentPostponements_Webinars
     FOREIGN KEY (ServiceID)
-    REFERENCES Webinars (WebinarID);
+    REFERENCES Webinars (WebinarID)
+    ON DELETE CASCADE;
 
 -- Reference: InternshipDetails_Internships (table: InternshipDetails)
 ALTER TABLE InternshipDetails ADD CONSTRAINT InternshipDetails_Internships
     FOREIGN KEY (InternshipID)
-    REFERENCES Internships (InternshipID);
+    REFERENCES Internships (InternshipID)
+    ON DELETE CASCADE;
 
 -- Reference: InternshipDetails_Students (table: InternshipDetails)
 ALTER TABLE InternshipDetails ADD CONSTRAINT InternshipDetails_Students
     FOREIGN KEY (StudentID)
-    REFERENCES Students (StudentID);
+    REFERENCES Students (StudentID)
+    ON DELETE CASCADE;
 
 -- Reference: Internships_Studies (table: Internships)
 ALTER TABLE Internships ADD CONSTRAINT Internships_Studies
     FOREIGN KEY (StudyID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: LanguageId (table: Translators)
 ALTER TABLE Translators ADD CONSTRAINT LanguageId
     FOREIGN KEY (LanguageID)
-    REFERENCES Languages (LanguageID);
+    REFERENCES Languages (LanguageID)
+    ON DELETE CASCADE;
 
 -- Reference: OnlineAsyncCourse_Copy_of_CoursesMeetings (table: OnlineAsyncCourse)
 ALTER TABLE OnlineAsyncCourse ADD CONSTRAINT OnlineAsyncCourse_Copy_of_CoursesMeetings
     FOREIGN KEY (OnlineAsyncCourseMeetingID)
-    REFERENCES CoursesMeetings (MeetingID);
+    REFERENCES CoursesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: OnlineStudy_StudiesMeetings (table: OnlineStudy)
 ALTER TABLE OnlineStudy ADD CONSTRAINT OnlineStudy_StudiesMeetings
     FOREIGN KEY (OnlineStudyMeetingID)
-    REFERENCES StudiesMeetings (MeetingID);
+    REFERENCES StudiesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: OnlineSyncCourse_Copy_of_CoursesMeetings (table: OnlineSyncCourse)
 ALTER TABLE OnlineSyncCourse ADD CONSTRAINT OnlineSyncCourse_Copy_of_CoursesMeetings
     FOREIGN KEY (OnlineSyncCourseMeetingID)
-    REFERENCES CoursesMeetings (MeetingID);
+    REFERENCES CoursesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_Courses (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_Courses
     FOREIGN KEY (ServiceID)
-    REFERENCES Courses (CourseID);
+    REFERENCES Courses (CourseID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_Orders (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_Orders
     FOREIGN KEY (OrderID)
-    REFERENCES Orders (OrderID);
+    REFERENCES Orders (OrderID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_ServiceTypes (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_ServiceTypes
     FOREIGN KEY (ServiceTypeID)
-    REFERENCES ServiceTypes (ServiceTypeID);
+    REFERENCES ServiceTypes (ServiceTypeID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_Studies (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_Studies
     FOREIGN KEY (ServiceID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_StudiesMeetings (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_StudiesMeetings
     FOREIGN KEY (ServiceID)
-    REFERENCES StudiesMeetings (MeetingID);
+    REFERENCES StudiesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_StudyMeetup (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_StudyMeetup
     FOREIGN KEY (ServiceID)
-    REFERENCES StudyMeetups (StudyMeetupID);
+    REFERENCES StudyMeetups (StudyMeetupID)
+    ON DELETE CASCADE;
 
 -- Reference: OrderDetails_Webinars (table: OrderDetails)
 ALTER TABLE OrderDetails ADD CONSTRAINT OrderDetails_Webinars
     FOREIGN KEY (ServiceID)
-    REFERENCES Webinars (WebinarID);
+    REFERENCES Webinars (WebinarID)
+    ON DELETE CASCADE;
 
 -- Reference: Orders_Users (table: Orders)
 ALTER TABLE Orders ADD CONSTRAINT Orders_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: Payments_OrderDetails (table: Payments)
 ALTER TABLE Payments ADD CONSTRAINT Payments_OrderDetails
     FOREIGN KEY (OrderDetailID)
-    REFERENCES OrderDetails (OrderDetailID);
+    REFERENCES OrderDetails (OrderDetailID)
+    ON DELETE CASCADE;
 
 -- Reference: StationaryCourse_Classrooms (table: StationaryCourse)
 ALTER TABLE StationaryCourse ADD CONSTRAINT StationaryCourse_Classrooms
     FOREIGN KEY (ClassroomID)
-    REFERENCES Classrooms (ClassroomID);
+    REFERENCES Classrooms (ClassroomID)
+    ON DELETE CASCADE;
 
 -- Reference: StationaryCourse_Copy_of_CoursesMeetings (table: StationaryCourse)
 ALTER TABLE StationaryCourse ADD CONSTRAINT StationaryCourse_Copy_of_CoursesMeetings
     FOREIGN KEY (StationaryCourseMeetingID)
-    REFERENCES CoursesMeetings (MeetingID);
+    REFERENCES CoursesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: StationaryStudy_Classrooms (table: StationaryStudy)
 ALTER TABLE StationaryStudy ADD CONSTRAINT StationaryStudy_Classrooms
     FOREIGN KEY (ClassroomID)
-    REFERENCES Classrooms (ClassroomID);
+    REFERENCES Classrooms (ClassroomID)
+    ON DELETE CASCADE;
 
 -- Reference: StationaryStudy_StudiesMeetings (table: StationaryStudy)
 ALTER TABLE StationaryStudy ADD CONSTRAINT StationaryStudy_StudiesMeetings
     FOREIGN KEY (StationaryStudyMeetingID)
-    REFERENCES StudiesMeetings (MeetingID);
+    REFERENCES StudiesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: Students_Semesters (table: Students)
 ALTER TABLE Students ADD CONSTRAINT Students_Semesters
     FOREIGN KEY (SemesterNo)
-    REFERENCES Semesters (SemesterNo);
+    REFERENCES Semesters (SemesterNo)
+    ON DELETE CASCADE;
 
 -- Reference: Students_Studies (table: Students)
 ALTER TABLE Students ADD CONSTRAINT Students_Studies
     FOREIGN KEY (StudyID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: Students_Users (table: Students)
 ALTER TABLE Students ADD CONSTRAINT Students_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesMeetings_Employees (table: StudiesMeetings)
 ALTER TABLE StudiesMeetings ADD CONSTRAINT StudiesMeetings_Employees
     FOREIGN KEY (LecturerID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesMeetings_StudyMeetup (table: StudiesMeetings)
 ALTER TABLE StudiesMeetings ADD CONSTRAINT StudiesMeetings_StudyMeetup
     FOREIGN KEY (StudyMeetupID)
-    REFERENCES StudyMeetups (StudyMeetupID);
+    REFERENCES StudyMeetups (StudyMeetupID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesMeetings_Subjects (table: StudiesMeetings)
 ALTER TABLE StudiesMeetings ADD CONSTRAINT StudiesMeetings_Subjects
     FOREIGN KEY (SubjectID)
-    REFERENCES Subjects (SubjectID);
+    REFERENCES Subjects (SubjectID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesMeetings_Translators (table: StudiesMeetings)
 ALTER TABLE StudiesMeetings ADD CONSTRAINT StudiesMeetings_Translators
     FOREIGN KEY (TranslatorLanguageID)
-    REFERENCES Translators (TranslatorLanguageID);
+    REFERENCES Translators (TranslatorLanguageID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesSchedule_StudySemesters (table: StudiesSchedule)
 ALTER TABLE StudiesSchedule ADD CONSTRAINT StudiesSchedule_StudySemesters
     FOREIGN KEY (StudySemesterID)
-    REFERENCES StudySemesters (StudySemesterID);
+    REFERENCES StudySemesters (StudySemesterID)
+    ON DELETE CASCADE;
 
 -- Reference: StudiesSchedule_Subjects (table: StudiesSchedule)
 ALTER TABLE StudiesSchedule ADD CONSTRAINT StudiesSchedule_Subjects
     FOREIGN KEY (SubjectID)
-    REFERENCES Subjects (SubjectID);
+    REFERENCES Subjects (SubjectID)
+    ON DELETE CASCADE;
 
 -- Reference: Studies_Coordinators (table: Studies)
 ALTER TABLE Studies ADD CONSTRAINT Studies_Coordinators
     FOREIGN KEY (StudyCoordinatorID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: StudyAttandance_Students (table: StudyAttandance)
 ALTER TABLE StudyAttandance ADD CONSTRAINT StudyAttandance_Students
     FOREIGN KEY (StudentID)
-    REFERENCES Students (StudentID);
+    REFERENCES Students (StudentID)
+    ON DELETE CASCADE;
 
 -- Reference: StudyAttandance_StudiesMeetings (table: StudyAttandance)
 ALTER TABLE StudyAttandance ADD CONSTRAINT StudyAttandance_StudiesMeetings
     FOREIGN KEY (StudyMeetingID)
-    REFERENCES StudiesMeetings (MeetingID);
+    REFERENCES StudiesMeetings (MeetingID)
+    ON DELETE CASCADE;
 
 -- Reference: StudyMeetup_StudySemesters (table: StudyMeetups)
 ALTER TABLE StudyMeetups ADD CONSTRAINT StudyMeetup_StudySemesters
     FOREIGN KEY (StudySemesterID)
-    REFERENCES StudySemesters (StudySemesterID);
+    REFERENCES StudySemesters (StudySemesterID)
+    ON DELETE CASCADE;
 
 -- Reference: StudySemesters_Semesters (table: StudySemesters)
 ALTER TABLE StudySemesters ADD CONSTRAINT StudySemesters_Semesters
     FOREIGN KEY (SemesterNo)
-    REFERENCES Semesters (SemesterNo);
+    REFERENCES Semesters (SemesterNo)
+    ON DELETE CASCADE;
 
 -- Reference: StudySemesters_Studies (table: StudySemesters)
 ALTER TABLE StudySemesters ADD CONSTRAINT StudySemesters_Studies
     FOREIGN KEY (StudyID)
-    REFERENCES Studies (StudyID);
+    REFERENCES Studies (StudyID)
+    ON DELETE CASCADE;
 
 -- Reference: TranslatorsLanguages_Employees (table: Translators)
 ALTER TABLE Translators ADD CONSTRAINT TranslatorsLanguages_Employees
     FOREIGN KEY (EmployeeID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- Reference: Translators_Webinars (table: Webinars)
 ALTER TABLE Webinars ADD CONSTRAINT Translators_Webinars
     FOREIGN KEY (TranslatorLanguageD)
-    REFERENCES Translators (TranslatorLanguageID);
+    REFERENCES Translators (TranslatorLanguageID)
+    ON DELETE CASCADE;
 
 -- Reference: Users_Addresses (table: Users)
 ALTER TABLE Users ADD CONSTRAINT Users_Addresses
     FOREIGN KEY (AddressID)
-    REFERENCES Addresses (AddressID);
+    REFERENCES Addresses (AddressID)
+    ON DELETE CASCADE;
 
 -- Reference: WebinarsAttendance_Users (table: WebinarsAttendance)
 ALTER TABLE WebinarsAttendance ADD CONSTRAINT WebinarsAttendance_Users
     FOREIGN KEY (UserID)
-    REFERENCES Users (UserID);
+    REFERENCES Users (UserID)
+    ON DELETE CASCADE;
 
 -- Reference: WebinarsAttendance_Webinars (table: WebinarsAttendance)
 ALTER TABLE WebinarsAttendance ADD CONSTRAINT WebinarsAttendance_Webinars
     FOREIGN KEY (WebinarID)
-    REFERENCES Webinars (WebinarID);
+    REFERENCES Webinars (WebinarID)
+    ON DELETE CASCADE;
 
 -- Reference: Webinars_Employees (table: Webinars)
 ALTER TABLE Webinars ADD CONSTRAINT Webinars_Employees
     FOREIGN KEY (WebinarPresenterID)
-    REFERENCES Employees (EmployeeID);
+    REFERENCES Employees (EmployeeID)
+    ON DELETE CASCADE;
 
 -- End of file.
 
