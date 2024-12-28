@@ -6,6 +6,9 @@ import studies
 import studies.grades
 import studies.subjects
 import misc
+import misc.cities
+import misc.countries
+import misc.addresses
 
 
 path_to_json_file = "database_credentials.json"
