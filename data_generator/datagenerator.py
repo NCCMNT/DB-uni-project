@@ -1,5 +1,6 @@
 import pyodbc
 import json
+from people.roles import fill_roles
 
 path_to_json_file = "database_credentials.json"
 
@@ -14,6 +15,9 @@ password = credentials["password"]
 driver = credentials["driver"]
 
 def main():
+    conn = None
+    cursor = None
+
     try:
         # Connect to the database
         conn = pyodbc.connect(
@@ -27,14 +31,7 @@ def main():
         cursor = conn.cursor()
         print("Successfully connected to the database.")
 
-        list_tables_query = "SELECT * FROM sys.tables;"
-        cursor.execute(list_tables_query)
-
-        rows = cursor.fetchall()
-
-        # Displaying the results
-        for row in rows:
-            print(row[0])
+        fill_roles(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
