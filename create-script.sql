@@ -101,7 +101,7 @@ CREATE TABLE FinalExams (
 -- Table: Grades
 CREATE TABLE Grades (
     GradeID int  NOT NULL,
-    GradeValue decimal(1,1)  NOT NULL,
+    GradeValue decimal(3,1)  NOT NULL,
     CONSTRAINT GradeValueGt2Lt5 CHECK (GradeValue between 2 and 5),
     CONSTRAINT Grades_pk PRIMARY KEY  (GradeID)
 );
