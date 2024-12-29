@@ -3,6 +3,7 @@ import json
 import people.languages
 import people.roles
 import people.employees
+import people.employee_roles
 import studies
 import studies.grades
 import studies.subjects
@@ -49,6 +50,7 @@ def main():
         studies.grades.fill_grades(cursor)
         studies.subjects.fill_subjects(cursor)
         people.employees.fill_employees(cursor)
+        people.employee_roles.fill_employee_roles(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
