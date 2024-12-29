@@ -5,6 +5,7 @@ import people.roles
 import people.employees
 import people.employee_roles
 import people.translators
+import people.users
 import studies
 import studies.grades
 import studies.subjects
@@ -53,6 +54,7 @@ def main():
         people.employees.fill_employees(cursor)
         people.employee_roles.fill_employee_roles(cursor)
         people.translators.fill_translators(cursor)
+        people.users.fill_users(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")

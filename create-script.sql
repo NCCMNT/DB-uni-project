@@ -320,7 +320,7 @@ CREATE TABLE Users (
     UserID int  NOT NULL,
     Firstname varchar(20)  NOT NULL,
     Lastname varchar(20)  NOT NULL,
-    Email varchar(30)  NOT NULL,
+    Email varchar(50)  NOT NULL,
     Password varchar(255)  NOT NULL,
     Phone varchar(15)  NULL,
     AddressID int  NOT NULL,
