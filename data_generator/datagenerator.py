@@ -2,6 +2,7 @@ import pyodbc
 import json
 import people.languages
 import people.roles
+import people.employees
 import studies
 import studies.grades
 import studies.subjects
@@ -47,6 +48,7 @@ def main():
         people.languages.fill_languages(cursor)
         studies.grades.fill_grades(cursor)
         studies.subjects.fill_subjects(cursor)
+        people.employees.fill_employees(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
