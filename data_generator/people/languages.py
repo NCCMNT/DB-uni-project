@@ -20,7 +20,7 @@ def fill_languages(cursor: pyodbc.Cursor):
         "Turkish",
         "Vietnamese",
         "Thai",
-        "Polish",
+        "Hungarian"
         "Dutch",
         "Swedish",
         "Finnish"
