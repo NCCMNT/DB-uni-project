@@ -13,7 +13,8 @@ import misc
 import misc.cities
 import misc.countries
 import misc.addresses
-
+import webinars
+import webinars.webinars
 
 path_to_json_file = "database_credentials.json"
 
@@ -55,7 +56,7 @@ def main():
         people.employee_roles.fill_employee_roles(cursor)
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
-
+        webinars.webinars.fill_webinars(cursor)
         conn.commit()
         print("Test data inserted successfully.")
 
