@@ -4,7 +4,7 @@ import random
 def fill_students(cursor: pyodbc.Cursor):
     clear_students(cursor)
 
-    RECORDS_TO_GENERATE = 500
+    RECORDS_TO_GENERATE = 1000
 
     user_ids = get_user_ids(cursor)
     study_ids = get_study_ids(cursor)
