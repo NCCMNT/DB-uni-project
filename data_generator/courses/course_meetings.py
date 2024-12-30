@@ -4,7 +4,7 @@ import pandas
 from datetime import datetime, timedelta
 
 def fill_course_meetings(cursor: pyodbc.Cursor):
-    # clear_course_meetings(cursor)
+    clear_course_meetings(cursor)
 
     get_course_instructors_sql_query = f"""
     SELECT
@@ -76,7 +76,7 @@ def fill_course_meetings(cursor: pyodbc.Cursor):
             cursor.execute(sql_command)
 
 def clear_course_meetings(cursor: pyodbc.Cursor):
-    sql_clear = "DELETE FROM dbo.Courses;"
+    sql_clear = "DELETE FROM dbo.CoursesMeetings;"
     cursor.execute(sql_clear)
 
 def query_to_data_frame(cursor: pyodbc.Cursor, query: str):
