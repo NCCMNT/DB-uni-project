@@ -145,14 +145,14 @@ CREATE TABLE Languages (
 -- Table: OnlineAsyncCourse
 CREATE TABLE OnlineAsyncCourse (
     OnlineAsyncCourseMeetingID int  NOT NULL,
-    RecordingLink varchar(50)  NOT NULL,
+    RecordingLink varchar(100)  NOT NULL,
     CONSTRAINT OnlineAsyncCourse_pk PRIMARY KEY  (OnlineAsyncCourseMeetingID)
 );
 
 -- Table: OnlineStudy
 CREATE TABLE OnlineStudy (
     OnlineStudyMeetingID int  NOT NULL,
-    MeetingLink varchar(50)  NOT NULL,
+    MeetingLink varchar(100)  NOT NULL,
     CONSTRAINT CheckMeetingLink CHECK (MeetingLink LIKE 'http://%' OR  MeetingLink LIKE 'https://%'),
     CONSTRAINT OnlineStudy_pk PRIMARY KEY  (OnlineStudyMeetingID)
 );
@@ -160,7 +160,7 @@ CREATE TABLE OnlineStudy (
 -- Table: OnlineSyncCourse
 CREATE TABLE OnlineSyncCourse (
     OnlineSyncCourseMeetingID int  NOT NULL,
-    MeetingLink varchar(50)  NOT NULL,
+    MeetingLink varchar(100)  NOT NULL,
     CONSTRAINT OnlineSyncCourse_pk PRIMARY KEY  (OnlineSyncCourseMeetingID)
 );
 
@@ -332,7 +332,7 @@ CREATE TABLE Users (
 CREATE TABLE Webinars (
     WebinarID int  NOT NULL,
     WebinarName varchar(40)  NOT NULL,
-    RecordingLink varchar(50)  NOT NULL,
+    RecordingLink varchar(100)  NOT NULL,
     Date datetime  NOT NULL,
     Price money  NULL,
     WebinarPresenterID int  NOT NULL,
