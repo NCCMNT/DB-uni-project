@@ -77,7 +77,7 @@ def main():
         # space for filling orders section
 
         courses.courses_attendance.fill_courses_attandance(cursor)
-        studies.study_semesters.fill_study_semesters(cursor)
+        # studies.study_semesters.fill_study_semesters(cursor)
         # studies.semesters.fill_semesters(cursor)
         # studies.internship_details.fill_internship_details(cursor)
         # studies.students.fill_students(cursor)
