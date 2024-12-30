@@ -93,9 +93,9 @@ CREATE TABLE Employees (
 -- Table: FinalExams
 CREATE TABLE FinalExams (
     StudyID int  NOT NULL,
-    UserID int  NOT NULL,
+    StudentID int  NOT NULL,
     GradeID int  NOT NULL,
-    CONSTRAINT FinalExams_pk PRIMARY KEY  (StudyID,UserID)
+    CONSTRAINT FinalExams_pk PRIMARY KEY  (StudyID,StudentID)
 );
 
 -- Table: Grades
@@ -428,16 +428,16 @@ ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Grades
     REFERENCES Grades (GradeID)
     ON DELETE CASCADE;
 
+-- Reference: FinalExams_Students (table: FinalExams)
+ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Students
+    FOREIGN KEY (StudentID)
+    REFERENCES Students (StudentID)
+    ON DELETE CASCADE;
+
 -- Reference: FinalExams_Studies (table: FinalExams)
 ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Studies
     FOREIGN KEY (StudyID)
     REFERENCES Studies (StudyID)
-    ON DELETE CASCADE;
-
--- Reference: FinalExams_Users (table: FinalExams)
-ALTER TABLE FinalExams ADD CONSTRAINT FinalExams_Users
-    FOREIGN KEY (UserID)
-    REFERENCES Users (UserID)
     ON DELETE CASCADE;
 
 -- Reference: HeadTeacherPaymentPostponements_Courses (table: HeadTeacherPaymentPostponements)
