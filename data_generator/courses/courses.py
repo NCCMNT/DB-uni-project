@@ -22,10 +22,12 @@ def fill_courses(cursor: pyodbc.Cursor):
     translators_df = get_translators(cursor)
     translator_language_id_list = list(translators_df["TranslatorLanguageID"])
     course_coordinators_id_list = list(course_coordinators["EmployeeID"])
+    total_prices_list = [20, 30, 40, 50, 60, 70, 80, 90, 100]
+    procentages = [0.1, 0.2, 0.3, 0.4, 0.5]
 
     for course_id, course in enumerate(courses):
-        total_price = random.choice([20, 30, 40, 50, 60, 70, 80, 90, 100])
-        fee_price = total_price * random.choice([0.1, 0.2, 0.3, 0.4, 0.5])
+        total_price = random.choice(total_prices_list)
+        fee_price = total_price * random.choice(procentages)
         course_coordinator_id = random.choice(course_coordinators_id_list)
         translator_language_id = random.choice(translator_language_id_list)
         translator_employee_id = list(translators_df[translators_df["TranslatorLanguageID"] == translator_language_id]["EmployeeID"])[0]
