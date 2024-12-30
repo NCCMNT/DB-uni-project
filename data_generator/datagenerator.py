@@ -13,6 +13,7 @@ import studies.internships
 import studies.semesters
 import studies.students
 import studies.studies
+import studies.studies_schedule
 import studies.study_semesters
 import studies.subjects
 import misc
@@ -79,10 +80,12 @@ def main():
         courses.courses_attendance.fill_courses_attandance(cursor)
         # studies.study_semesters.fill_study_semesters(cursor)
         # studies.semesters.fill_semesters(cursor)
-        # studies.internship_details.fill_internship_details(cursor)
+        # studies.studies.fill_studies(cursor)
+        studies.study_semesters.fill_study_semesters(cursor)
         # studies.students.fill_students(cursor)
         # studies.internships.fill_internships(cursor)
-        # studies.studies.fill_studies(cursor)
+        # studies.internship_details.fill_internship_details(cursor)
+        studies.studies_schedule.fill_studies_schedule(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
