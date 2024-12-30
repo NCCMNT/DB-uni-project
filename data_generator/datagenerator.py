@@ -13,6 +13,8 @@ import misc
 import misc.cities
 import misc.countries
 import misc.addresses
+import webinars
+import webinars.webinars
 import misc.classrooms
 import courses.courses
 import courses.course_meetings
@@ -59,9 +61,10 @@ def main():
         people.employee_roles.fill_employee_roles(cursor)
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
+        webinars.webinars.fill_webinars(cursor)
         courses.courses.fill_courses(cursor)
         courses.course_meetings.fill_course_meetings(cursor)
-
+        
         conn.commit()
         print("Test data inserted successfully.")
 
