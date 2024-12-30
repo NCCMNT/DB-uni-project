@@ -18,6 +18,7 @@ import webinars.webinars
 import misc.classrooms
 import courses.courses
 import courses.course_meetings
+import courses.stationary_sync_async_course_meetings
 
 
 path_to_json_file = "database_credentials.json"
@@ -64,7 +65,8 @@ def main():
         webinars.webinars.fill_webinars(cursor)
         courses.courses.fill_courses(cursor)
         courses.course_meetings.fill_course_meetings(cursor)
-        
+        courses.stationary_sync_async_course_meetings.fill_stationary_sync_async_course_meetings(cursor)
+
         conn.commit()
         print("Test data inserted successfully.")
 
