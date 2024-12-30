@@ -15,6 +15,10 @@ import misc.countries
 import misc.addresses
 import webinars
 import webinars.webinars
+import misc.classrooms
+import courses.courses
+import courses.course_meetings
+
 
 path_to_json_file = "database_credentials.json"
 
@@ -48,6 +52,7 @@ def main():
         misc.countries.fill_countries(cursor)
         misc.cities.fill_cities(cursor)
         misc.addresses.fill_addresses(cursor)
+        misc.classrooms.fill_classrooms(cursor)
         people.roles.fill_roles(cursor)
         people.languages.fill_languages(cursor)
         studies.grades.fill_grades(cursor)
@@ -57,6 +62,9 @@ def main():
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
         webinars.webinars.fill_webinars(cursor)
+        courses.courses.fill_courses(cursor)
+        courses.course_meetings.fill_course_meetings(cursor)
+        
         conn.commit()
         print("Test data inserted successfully.")
 
