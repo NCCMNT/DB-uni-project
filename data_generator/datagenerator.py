@@ -5,9 +5,15 @@ import people.roles
 import people.employees
 import people.employee_roles
 import people.translators
-import people.users
+# import people.users
 import studies
 import studies.grades
+import studies.internship_details
+import studies.internships
+import studies.semesters
+import studies.students
+import studies.studies
+import studies.study_semesters
 import studies.subjects
 import misc
 import misc.cities
@@ -71,6 +77,12 @@ def main():
         # space for filling orders section
 
         courses.courses_attendance.fill_courses_attandance(cursor)
+        studies.study_semesters.fill_study_semesters(cursor)
+        # studies.semesters.fill_semesters(cursor)
+        # studies.internship_details.fill_internship_details(cursor)
+        # studies.students.fill_students(cursor)
+        # studies.internships.fill_internships(cursor)
+        # studies.studies.fill_studies(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
