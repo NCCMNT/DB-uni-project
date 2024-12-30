@@ -14,6 +14,7 @@ import misc.cities
 import misc.countries
 import misc.addresses
 import misc.classrooms
+import courses.courses
 
 
 path_to_json_file = "database_credentials.json"
@@ -57,6 +58,7 @@ def main():
         people.employee_roles.fill_employee_roles(cursor)
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
+        courses.courses.fill_courses(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
