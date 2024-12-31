@@ -22,8 +22,8 @@ def fill_study_meetings(cursor: pyodbc.Cursor):
 
         for hour in range(hours):
 
-            start_date = start_date + timedelta(hours=hour)
-            end_date = start_date + timedelta(minutes=45)
+            beg_date = start_date + timedelta(hours=hour)
+            end_date = beg_date + timedelta(minutes=45)
 
             limit = study_limit + additional_spots
 
@@ -35,7 +35,7 @@ def fill_study_meetings(cursor: pyodbc.Cursor):
             INSERT into dbo.StudiesMeetings (MeetingID, StudyMeetupID, SubjectID, StartDate, EndDate, LecturerID, LimitOfMeetingParticipants, TranslatorLanguageID)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?);
             """
-            cursor.execute(sql_command, (primary_key, study_meetup_id, subject_id, start_date, end_date, lecturer_id, limit, translator_language_id))
+            cursor.execute(sql_command, (primary_key + 1, study_meetup_id, subject_id, beg_date, end_date, lecturer_id, limit, translator_language_id))
             primary_key += 1
 
 def clear_study_meetings(cursor: pyodbc.Cursor):
