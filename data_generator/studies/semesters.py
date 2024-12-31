@@ -3,7 +3,9 @@ import pyodbc
 def fill_semesters(cursor: pyodbc.Cursor):
     clear_semesters(cursor)
 
-    for primary_key in range(7):
+    NUMBER_OF_SEMESTERS_PER_STUDY = 7
+
+    for primary_key in range(NUMBER_OF_SEMESTERS_PER_STUDY):
         sql_command = f"""
         INSERT into dbo.Semesters (SemesterNo)
         VALUES (?);
