@@ -1,17 +1,56 @@
 import random
 import pyodbc
+import pandas
+
 
 def fill_stationary_sync_async_course_meetings(cursor: pyodbc.Cursor):
     clear_stationary_sync_async_course_meetings(cursor)
 
     course_meetings_count = get_table_rows_count(cursor, "CoursesMeetings")
 
-    function_pointers_list = [add_stationary_meeting, add_sync_meeting, add_async_meeting]
+    get_course_meetings_sql_query = """
+    SELECT
+        CourseID,
+        MeetingID,
+        LimitOfParticipants
+    FROM CoursesMeetings
+    """
 
-    for course_id in range(1, course_meetings_count + 1):
-        function_to_call = random.choice(function_pointers_list)
+    course_meetings_df = query_to_data_frame(cursor, get_course_meetings_sql_query)
 
-        function_to_call(cursor, course_id)
+    get_classroom_id_with_capacity_sql_query = """
+    SELECT
+        ClassroomID,
+        Capacity
+    FROM Classrooms
+    """
+
+    classrooms_df = query_to_data_frame(cursor, get_classroom_id_with_capacity_sql_query)
+
+    prev_course_id = None
+
+    for course_meeting_id in range(1, course_meetings_count + 1):
+        limit_of_participants = list(course_meetings_df[course_meetings_df["MeetingID"] == course_meeting_id]["LimitOfParticipants"])[0]
+        course_id = list(course_meetings_df[course_meetings_df["MeetingID"] == course_meeting_id]["CourseID"])[0]
+
+        if not pandas.isna(limit_of_participants):
+            if prev_course_id != course_id:
+                add_stationary_meeting(cursor, course_meeting_id, classrooms_df, limit_of_participants)
+            elif random.randint(1, 10) <= 5:
+                add_stationary_meeting(cursor, course_meeting_id, classrooms_df, limit_of_participants)
+            elif random.randint(1, 10) <= 5:
+                add_sync_meeting(cursor, course_meeting_id)
+            else:
+                add_async_meeting(cursor, course_meeting_id)
+        else:
+            meeting_type = random.randint(1, 10)
+
+            if meeting_type <= 5:
+                add_sync_meeting(cursor, course_meeting_id)
+            else:
+                add_async_meeting(cursor, course_meeting_id)
+
+        prev_course_id = course_id
 
 def clear_stationary_sync_async_course_meetings(cursor: pyodbc.Cursor):
     sql_clear = "DELETE FROM dbo.StationaryCourse;"
@@ -29,9 +68,13 @@ def get_table_rows_count(cursor: pyodbc.Cursor, table_name: str):
 
     return cursor.fetchval()
 
-def add_stationary_meeting(cursor: pyodbc.Cursor, meeting_id: int):
-    classrooms_count = get_table_rows_count(cursor, "Classrooms")
-    classroom_id: int = random.randint(1, classrooms_count + 1)
+def query_to_data_frame(cursor: pyodbc.Cursor, query: str):
+    cursor.execute(query)
+    return pandas.DataFrame.from_records(cursor.fetchall(), columns=[col[0] for col in cursor.description])
+
+def add_stationary_meeting(cursor: pyodbc.Cursor, meeting_id: int, classrooms_df: pandas.DataFrame, limit_of_participants: int):
+    classrooms_choice_list = list(classrooms_df[classrooms_df["Capacity"] >= limit_of_participants]["ClassroomID"])
+    classroom_id = random.choice(classrooms_choice_list)
 
     sql_command = f"""
     INSERT INTO dbo.StationaryCourse (StationaryCourseMeetingID, ClassroomID)
