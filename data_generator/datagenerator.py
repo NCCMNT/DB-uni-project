@@ -11,7 +11,9 @@ import studies.final_exams
 import studies.grades
 import studies.internship_details
 import studies.internships
+import studies.online_study
 import studies.semesters
+import studies.stationary_study
 import studies.students
 import studies.studies
 import studies.studies_meetings
@@ -92,7 +94,9 @@ def main():
         # studies.studies_schedule.fill_studies_schedule(cursor)
         # studies.final_exams.fill_final_exams(cursor)
         # studies.study_meetups.fill_study_meetups(cursor)
-        studies.studies_meetings.fill_study_meetings(cursor)
+        # studies.studies_meetings.fill_study_meetings(cursor)
+        # studies.stationary_study.fill_stationary_study_meetings(cursor)
+        # studies.online_study.fill_online_study_meetings(cursor)
 
 
         conn.commit()
