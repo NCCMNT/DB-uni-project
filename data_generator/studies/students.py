@@ -36,7 +36,11 @@ def clear_students(cursor: pyodbc.Cursor):
 
 def get_user_ids(cursor: pyodbc.Cursor):
     sql_query = f"""
-    SELECT UserID FROM Users
+    SELECT u.UserID FROM Users AS u
+    INNER JOIN Orders AS o ON o.UserID = u.UserID
+    INNER JOIN OrderDetails AS od ON od.OrderID = o.OrderID
+    INNER JOIN ServiceTypes AS st ON st.ServiceTypeID = od.ServiceTypeID
+    WHERE st.ServiceTypeName = 'Studies'
     ORDER BY 1
     """
     cursor.execute(sql_query)
