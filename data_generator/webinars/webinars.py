@@ -14,12 +14,14 @@ def fill_webinars(cursor: pyodbc.Cursor):
     NO_OF_WEBINARS = 750
     FOREIGN_LANGUAGE_PROBABILITY = 0.25
     for i in range(1, NO_OF_WEBINARS + 1):
+        if i % 100 == 0:
+            print(f"---Generating Webinars--- Webinars processed: {i}/{NO_OF_WEBINARS}, Progress: {round(i / NO_OF_WEBINARS * 100, 2)}%")
         webinar = {
             "ID": i,
             "name": random_webinar_name(i - 1),
             "link": generate_link("webinar"),
             "date": datetime.datetime(
-                year=random.randint(2025, 2029),
+                year=random.randint(2020, 2026),
                 month=random.randint(1, 12),
                 day=random.randint(1, 28),
                 hour=random.randint(0, 23),
@@ -38,6 +40,9 @@ def insert_webinar(cursor: pyodbc.Cursor, webinar_info: dict):
 
 def clear_webinars(cursor: pyodbc.Cursor):
     cursor.execute("delete from dbo.Webinars")
+
+def get_webinars_count(cursor):
+    return cursor.execute("SELECT COUNT(*) FROM dbo.Webinars").fetchval()
 
 def get_translators(cursor: pyodbc.Cursor):
     cursor.execute("SELECT * FROM dbo.Translators")
