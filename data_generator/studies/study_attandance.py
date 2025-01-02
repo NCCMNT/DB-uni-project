@@ -18,7 +18,7 @@ def fill_study_attandance(cursor: pyodbc.Cursor):
         VALUES (?, ?);
         """
         cursor.execute(sql_command, (meeting_id, student_id))
-        print(f"{i}/{n}")
+        print(f"{round(100 * i/n, 2)}%", end='\r')
         i += 1
 
 def clear_study_attandance(cursor: pyodbc.Cursor):

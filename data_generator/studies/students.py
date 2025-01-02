@@ -4,17 +4,15 @@ import random
 def fill_students(cursor: pyodbc.Cursor):
     clear_students(cursor)
 
-    RECORDS_TO_GENERATE = 2000
-
     user_ids = get_user_ids(cursor)
     study_ids = get_study_ids(cursor)
     semesters = get_semesters(cursor)
 
     checked = set()
+    primary_key = 0
 
-    for primary_key in range(RECORDS_TO_GENERATE):
+    for user_id in user_ids:
         
-        user_id = random.choice(user_ids)
         study_id = random.choice(study_ids)
         semester_no = random.choice(semesters)
 
@@ -29,6 +27,7 @@ def fill_students(cursor: pyodbc.Cursor):
         VALUES (?, ?, ?, ?);
         """
         cursor.execute(sql_command, (primary_key + 1, user_id, study_id, semester_no))
+        primary_key += 1
 
 def clear_students(cursor: pyodbc.Cursor):
     sql_clear = "DELETE FROM dbo.Students;"

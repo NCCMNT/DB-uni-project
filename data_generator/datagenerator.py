@@ -18,6 +18,7 @@ import studies.students
 import studies.studies
 import studies.studies_meetings
 import studies.studies_schedule
+import studies.study_attandance
 import studies.study_meetups
 import studies.study_semesters
 import studies.subjects
@@ -91,11 +92,11 @@ def main():
         studies.internship_details.fill_internship_details(cursor)
         studies.studies_schedule.fill_studies_schedule(cursor)
         studies.final_exams.fill_final_exams(cursor)
-        # studies.study_meetups.fill_study_meetups(cursor)
-        # studies.studies_meetings.fill_study_meetings(cursor)
-        # studies.stationary_study.fill_stationary_study_meetings(cursor)
-        # studies.online_study.fill_online_study_meetings(cursor)
-
+        studies.study_meetups.fill_study_meetups(cursor)
+        studies.studies_meetings.fill_study_meetings(cursor)
+        studies.stationary_study.fill_stationary_study_meetings(cursor)
+        studies.online_study.fill_online_study_meetings(cursor)
+        studies.study_attandance.fill_study_attandance(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
