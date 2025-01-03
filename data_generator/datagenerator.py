@@ -28,6 +28,7 @@ import misc.countries
 import misc.addresses
 import webinars
 import webinars.webinars
+import webinars.webinars_attendance
 import misc.classrooms
 import courses.courses
 import courses.course_meetings
@@ -83,6 +84,7 @@ def main():
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
         webinars.webinars.fill_webinars(cursor)
+        webinars.webinars.fill_webinars_attendance(cursor)
         courses.courses.fill_courses(cursor)
         courses.course_meetings.fill_course_meetings(cursor)
         courses.stationary_sync_async_course_meetings.fill_stationary_sync_async_course_meetings(cursor)
