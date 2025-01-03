@@ -1,0 +1,518 @@
+{
+    "Computer Science": [
+        {"subject": "Data Structures and Algorithms", "description": "The study of methods for organizing and processing data efficiently."},
+        {"subject": "Operating Systems", "description": "Understanding the software that manages hardware and provides common services for computer programs."},
+        {"subject": "Computer Networks", "description": "Exploring the design and function of interconnected computing systems."},
+        {"subject": "Programming Languages", "description": "Learning different ways to write instructions for computers."},
+        {"subject": "Database Systems", "description": "Organizing and managing large amounts of information."},
+        {"subject": "Software Engineering", "description": "The process of designing, building, and maintaining software."},
+        {"subject": "Artificial Intelligence", "description": "Creating computer systems that can perform tasks that usually require human intelligence."}
+    ],
+    "Applied Mathematics": [
+        {"subject": "Differential Equations", "description": "Studying equations involving rates of change to model real-world phenomena."},
+        {"subject": "Numerical Analysis", "description": "Developing algorithms to approximate solutions to mathematical problems."},
+        {"subject": "Optimization", "description": "Learning methods to find the best solution under given constraints."},
+        {"subject": "Linear Algebra", "description": "Studying vectors, matrices, and linear transformations."},
+        {"subject": "Probability and Statistics", "description": "Analyzing data and making predictions based on probabilities."},
+        {"subject": "Calculus", "description": "Studying rates of change, accumulation, and limits."},
+        {"subject": "Discrete Mathematics", "description": "Studying mathematical structures that are fundamentally discrete rather than continuous."}
+    ],
+    "Architecture": [
+        {"subject": "Building Design", "description": "The art and science of designing functional and aesthetic structures."},
+        {"subject": "Urban Planning", "description": "The process of designing and organizing urban spaces for communities."},
+        {"subject": "Architectural History", "description": "Examining the evolution of architectural styles and practices."},
+        {"subject": "Sustainable Design", "description": "Designing buildings that minimize their environmental impact."},
+        {"subject": "Structural Engineering", "description": "Understanding the principles of structural stability and design."},
+        {"subject": "Landscape Architecture", "description": "Designing outdoor spaces and landscapes."},
+        {"subject": "Interior Design", "description": "Designing and decorating interior spaces."}
+    ],
+    "Biology": [
+        {"subject": "Genetics", "description": "The study of heredity and variation in living organisms."},
+        {"subject": "Ecology", "description": "Exploring relationships between organisms and their environments."},
+        {"subject": "Cell Biology", "description": "Understanding the structure and function of cells."},
+        {"subject": "Evolutionary Biology", "description": "Studying the processes of evolutionary change."},
+        {"subject": "Anatomy and Physiology", "description": "Exploring the structure and function of organisms."},
+        {"subject": "Microbiology", "description": "Studying microorganisms such as bacteria and viruses."},
+        {"subject": "Botany", "description": "The study of plants."}
+    ],
+    "Chemistry": [
+        {"subject": "Organic Chemistry", "description": "The study of carbon-containing compounds and their reactions."},
+        {"subject": "Analytical Chemistry", "description": "Methods for analyzing substances to determine their composition."},
+        {"subject": "Physical Chemistry", "description": "Exploring the principles governing chemical systems and reactions."},
+        {"subject": "Inorganic Chemistry", "description": "The study of compounds that do not contain carbon."},
+        {"subject": "Biochemistry", "description": "The study of chemical processes within living organisms."},
+        {"subject": "Environmental Chemistry", "description": "The study of chemical processes in the environment."},
+        {"subject": "Polymer Chemistry", "description": "The study of large molecules made up of repeating units."}
+    ],
+    "Physics": [
+        {"subject": "Classical Mechanics", "description": "The study of motion and forces in physical systems."},
+        {"subject": "Quantum Mechanics", "description": "Understanding the behavior of particles on an atomic and subatomic scale."},
+        {"subject": "Thermodynamics", "description": "Exploring the principles of heat, energy, and work."},
+        {"subject": "Electromagnetism", "description": "Studying the forces between electric charges and magnetic fields."},
+        {"subject": "Optics", "description": "The study of light and its behavior."},
+        {"subject": "Nuclear Physics", "description": "The study of the atomic nucleus."},
+        {"subject": "Astrophysics", "description": "The study of celestial objects and phenomena."}
+    ],
+    "Psychology": [
+        {"subject": "Cognitive Psychology", "description": "Studying mental processes such as perception, memory, and decision-making."},
+        {"subject": "Developmental Psychology", "description": "Understanding psychological growth and changes across the lifespan."},
+        {"subject": "Abnormal Psychology", "description": "Examining atypical behaviors and psychological disorders."},
+        {"subject": "Social Psychology", "description": "Studying how people's thoughts, feelings, and behaviors are influenced by others."},
+        {"subject": "Personality Psychology", "description": "Exploring individual differences in personality traits."},
+        {"subject": "Clinical Psychology", "description": "The study and treatment of mental disorders."},
+        {"subject": "Biological Psychology", "description": "Exploring the relationship between the brain and behavior."}
+    ],
+    "Economics": [
+        {"subject": "Microeconomics", "description": "Analyzing individual and firm decision-making in resource allocation."},
+        {"subject": "Macroeconomics", "description": "Exploring economic systems, national economies, and global markets."},
+        {"subject": "Game Theory", "description": "Studying strategic interactions and decision-making among agents."},
+        {"subject": "Econometrics", "description": "Using statistical methods to analyze economic data."},
+        {"subject": "International Economics", "description": "Studying trade and finance between countries."},
+        {"subject": "Behavioral Economics", "description": "Studying how psychological factors influence economic decisions."},
+        {"subject": "Public Economics", "description": "Studying the role of government in the economy."}
+    ],
+    "Sociology": [
+        {"subject": "Social Theory", "description": "Exploring frameworks to analyze and interpret societal structures."},
+        {"subject": "Cultural Sociology", "description": "Studying cultural practices, beliefs, and their impact on societies."},
+        {"subject": "Urban Sociology", "description": "Understanding social structures and dynamics in urban settings."},
+        {"subject": "Social Inequality", "description": "Studying the unequal distribution of resources and opportunities in society."},
+        {"subject": "Criminology", "description": "The study of crime and deviance."},
+        {"subject": "Demography", "description": "The study of population dynamics."},
+        {"subject": "Research Methods", "description": "Learning how to conduct sociological research."}
+    ],
+    "Political Science": [
+        {"subject": "Comparative Politics", "description": "Analyzing and comparing political systems across countries."},
+        {"subject": "International Relations", "description": "Exploring relationships and policies between nations."},
+        {"subject": "Political Theory", "description": "Studying concepts and ideas about politics and governance."},
+        {"subject": "Public Policy", "description": "Analyzing and evaluating government policies."},
+        {"subject": "Political Economy", "description": "Studying the relationship between politics and economics."},
+        {"subject": "Constitutional Law", "description": "The study of legal interpretation of the constitution."},
+        {"subject": "American Government", "description": "The study of the American political system."}
+    ],
+    "Environmental Science": [
+        {"subject": "Ecology", "description": "The study of the relationships between organisms and their environment."},
+        {"subject": "Environmental Chemistry", "description": "Understanding the chemical processes in the environment and the impact of pollutants."},
+        {"subject": "Conservation Biology", "description": "Exploring methods to protect and preserve biodiversity."},
+        {"subject": "Environmental Policy", "description": "Creating and implementing regulations to protect the environment."},
+        {"subject": "Environmental Geology", "description": "Studying the interactions between geological processes and the environment."},
+        {"subject": "Environmental Toxicology", "description": "Studying the effects of toxins on living organisms and the environment."},
+        {"subject": "Sustainability", "description": "Studying how to meet the needs of the present without compromising the ability of future generations to meet their own needs."}
+    ],
+    "Data Science": [
+        {"subject": "Statistics", "description": "Collecting, analyzing, and interpreting data to draw meaningful conclusions."},
+        {"subject": "Machine Learning", "description": "Developing algorithms that allow computers to learn from data without explicit programming."},
+        {"subject": "Data Visualization", "description": "Representing data graphically to facilitate understanding and analysis."},
+        {"subject": "Data Mining", "description": "Discovering patterns and knowledge from large datasets."},
+        {"subject": "Database Management", "description": "Organizing, storing, and retrieving data efficiently."},
+        {"subject": "Big Data", "description": "Working with extremely large and complex datasets."}
+    ],
+    "Artificial Intelligence": [
+        {"subject": "Machine Learning", "description": "Developing algorithms that allow computers to learn from data without explicit programming."},
+        {"subject": "Natural Language Processing", "description": "Enabling computers to understand, interpret, and generate human language."},
+        {"subject": "Computer Vision", "description": "Teaching computers to 'see' and interpret images and videos."},
+        {"subject": "Robotics", "description": "Designing and building robots that can perform tasks in the real world."},
+        {"subject": "Expert Systems", "description": "Creating computer systems that can make decisions like human experts."},
+        {"subject": "AI Ethics", "description": "Considering the moral and social implications of artificial intelligence."}
+    ],
+    "Machine Learning": [
+        {"subject": "Supervised Learning", "description": "Training algorithms on labeled data to make predictions or classifications."},
+        {"subject": "Unsupervised Learning", "description": "Discovering patterns and structures in unlabeled data."},
+        {"subject": "Reinforcement Learning", "description": "Training agents to make decisions by interacting with an environment."},
+        {"subject": "Deep Learning", "description": "Using artificial neural networks with multiple layers to learn complex patterns."},
+        {"subject": "Natural Language Processing", "description": "Using machine learning to understand and process human language."},
+        {"subject": "Computer Vision", "description": "Using machine learning to analyze and interpret images and videos."},
+        {"subject": "Machine Learning Ethics", "description": "Thinking about fairness and bias in machine learning systems."}
+    ],
+    "Information Technology": [
+        {"subject": "Networking", "description": "Setting up and maintaining computer networks and ensuring secure communication."},
+        {"subject": "Database Management", "description": "Organizing, storing, and retrieving data efficiently and securely."},
+        {"subject": "Cybersecurity", "description": "Protecting computer systems and networks from unauthorized access and attacks."},
+        {"subject": "Cloud Computing", "description": "Using remote servers to store and manage data and applications."},
+        {"subject": "IT Support", "description": "Helping people with computer problems and technical issues."},
+        {"subject": "Systems Analysis and Design", "description": "Planning and designing computer systems to meet business needs."},
+        {"subject": "IT Project Management", "description": "Managing IT projects to ensure they are completed on time and within budget."}
+    ],
+    "Software Engineering": [
+        {"subject": "Software Development", "description": "Designing, coding, and testing software applications."},
+        {"subject": "Software Testing", "description": "Ensuring software quality through rigorous testing and debugging."},
+        {"subject": "Software Project Management", "description": "Planning, executing, and delivering software projects on time and within budget."},
+        {"subject": "Software Architecture", "description": "Designing the overall structure and organization of software systems."},
+        {"subject": "Agile Development", "description": "Using iterative and flexible methods to develop software."},
+        {"subject": "DevOps", "description": "Combining software development and IT operations to improve the software delivery process."},
+        {"subject": "Software Engineering", "description": "Figuring out exactly what a piece of software needs to do."}
+    ],
+    "Cybersecurity": [
+        {"subject": "Network Security", "description": "Protecting computer networks from unauthorized access and attacks."},
+        {"subject": "Data Security", "description": "Safeguarding sensitive data from theft, corruption, or unauthorized access."},
+        {"subject": "Ethical Hacking", "description": "Using hacking techniques to identify vulnerabilities and improve security."},
+        {"subject": "Cryptography", "description": "Using codes and ciphers to protect information."},
+        {"subject": "Digital Forensics", "description": "Investigating cybercrimes and recovering digital evidence."},
+        {"subject": "Security Auditing", "description": "Checking computer systems for security weaknesses."},
+        {"subject": "Incident Response", "description": "Handling security breaches and minimizing their impact."}
+    ],
+    "Graphic Design": [
+        {"subject": "Visual Communication", "description": "Conveying messages and ideas through visual elements."},
+        {"subject": "Typography", "description": "Designing and using typefaces to create effective visual communication."},
+        {"subject": "User Interface Design", "description": "Designing user-friendly and visually appealing interfaces for software and websites."},
+        {"subject": "Layout and Composition", "description": "Arranging visual elements to create effective designs."},
+        {"subject": "Color Theory", "description": "Understanding how colors affect mood and perception."},
+        {"subject": "Image Editing", "description": "Using software to manipulate and enhance images."},
+        {"subject": "Branding and Identity", "description": "Creating visual identities for companies and organizations."}
+    ],
+    "Web Development": [
+        {"subject": "Front-End Development", "description": "Building the user interface and user experience of websites."},
+        {"subject": "Back-End Development", "description": "Developing the server-side logic and database interactions of websites."},
+        {"subject": "Web Design", "description": "Planning and creating the visual layout and user experience of websites."},
+        {"subject": "Web Accessibility", "description": "Making websites usable for people with disabilities."},
+        {"subject": "Web Security", "description": "Protecting websites from cyberattacks."},
+        {"subject": "User Experience (UX) Design", "description": "Focusing on making websites easy and enjoyable to use."},
+        {"subject": "SEO", "description": "Making websites easier to find in search engines."}
+    ],
+    "Digital Marketing": [
+        {"subject": "SEO engines", "description": "Improving website visibility in search engine results pages."},
+        {"subject": "Social Media Marketing", "description": "Using social media platforms to promote products or services."},
+        {"subject": "Data Analytics", "description": "Analyzing data to measure the effectiveness of digital marketing campaigns."},
+        {"subject": "Content Marketing", "description": "Creating and sharing valuable content to attract and engage customers."},
+        {"subject": "Email Marketing", "description": "Using email to communicate with customers and promote products or services."},
+        {"subject": "PPC Advertising", "description": "Running paid advertising campaigns on search engines and social media."},
+        {"subject": "Mobile Marketing", "description": "Reaching customers on their mobile devices."}
+    ],
+    "Business Administration": [
+        {"subject": "Management", "description": "Planning, organizing, leading, and controlling resources to achieve organizational goals."},
+        {"subject": "Finance", "description": "Managing financial resources and making sound investment decisions."},
+        {"subject": "Marketing", "description": "Promoting and selling products or services to target customers."},
+        {"subject": "Operations Management", "description": "Managing the production and delivery of goods and services."},
+        {"subject": "Human Resource Management", "description": "Managing employees and creating a positive work environment."},
+        {"subject": "Business Ethics", "description": "Understanding ethical principles in business."},
+        {"subject": "Strategic Management", "description": "Developing long-term plans to achieve organizational success."}
+    ],
+    "Finance": [
+        {"subject": "Investment Analysis", "description": "Evaluating investment opportunities and making informed investment decisions."},
+        {"subject": "Financial Planning", "description": "Developing strategies to achieve financial goals."},
+        {"subject": "Risk Management", "description": "Identifying, assessing, and mitigating financial risks."},
+        {"subject": "Corporate Finance", "description": "Managing the finances of businesses."},
+        {"subject": "Financial Markets", "description": "Understanding how financial markets work."},
+        {"subject": "International Finance", "description": "Managing finances in a global context."},
+        {"subject": "Personal Finance", "description": "Managing your own money and investments."}
+    ],
+    "Accounting": [
+        {"subject": "Financial Accounting", "description": "Recording, summarizing, and reporting financial transactions."},
+        {"subject": "Managerial Accounting", "description": "Using accounting information to make business decisions."},
+        {"subject": "Auditing", "description": "Examining financial records to ensure accuracy and compliance."},
+        {"subject": "Tax Accounting", "description": "Preparing tax returns and advising clients on tax matters."},
+        {"subject": "Cost Accounting", "description": "Tracking and analyzing the costs of producing goods and services."},
+        {"subject": "Forensic Accounting", "description": "Investigating financial fraud and other financial crimes."},
+        {"subject": "Accounting Information Systems", "description": "Using technology to manage accounting data."}
+    ],
+    "Human Resources": [
+        {"subject": "Recruitment and Selection", "description": "Finding and hiring qualified employees."},
+        {"subject": "Training and Development", "description": "Providing employees with the skills and knowledge they need to succeed."},
+        {"subject": "Compensation and Benefits", "description": "Designing and administering employee compensation and benefits programs."},
+        {"subject": "Employee Relations", "description": "Managing relationships between employees and employers."}
+    ],
+    "Marketing": [
+        {"subject": "Market Research", "description": "Gathering and analyzing information about target markets and consumer behavior."},
+        {"subject": "Branding", "description": "Creating and managing a brand's identity and reputation."},
+        {"subject": "Advertising", "description": "Promoting products or services through paid media channels."}
+    ],
+    "International Relations": [
+        {"subject": "Diplomacy", "description": "Conducting negotiations and maintaining peaceful relations between countries."},
+        {"subject": "International Law", "description": "Understanding the legal framework governing relations between countries."},
+        {"subject": "International Organizations", "description": "Studying the role of international organizations in global affairs."}
+    ],
+    "Public Health": [
+        {"subject": "Epidemiology", "description": "Studying the patterns and causes of diseases in populations."},
+        {"subject": "Biostatistics", "description": "Applying statistical methods to analyze public health data."},
+        {"subject": "Health Policy", "description": "Developing and implementing policies to improve public health."}
+    ],
+    "Nursing": [
+        {"subject": "Patient Care", "description": "Providing direct care to patients in various healthcare settings."},
+        {"subject": "Pharmacology", "description": "Understanding the effects of drugs on the body."},
+        {"subject": "Anatomy and Physiology", "description": "Studying the structure and function of the human body."}
+    ],
+    "Pharmacy": [
+        {"subject": "Pharmacology", "description": "Understanding the effects of drugs on the body."},
+        {"subject": "Pharmaceutics", "description": "Formulating and manufacturing drug products."},
+        {"subject": "Pharmacy Practice", "description": "Dispensing medications and providing patient counseling."}
+    ],
+    "Medicine": [
+        {"subject": "Anatomy and Physiology", "description": "Studying the structure and function of the human body."},
+        {"subject": "Pathology", "description": "Understanding the causes and mechanisms of diseases."},
+        {"subject": "Clinical Medicine", "description": "Diagnosing and treating diseases in patients."}
+    ],
+    "Dentistry": [
+        {"subject": "Oral Anatomy", "description": "Studying the structure of the oral cavity and teeth."},
+        {"subject": "Restorative Dentistry", "description": "Repairing damaged teeth and restoring their function."},
+        {"subject": "Oral Surgery", "description": "Performing surgical procedures in the oral cavity."}
+    ],
+    "Veterinary Science": [
+        {"subject": "Animal Anatomy and Physiology", "description": "Studying the structure and function of animal bodies."},
+        {"subject": "Animal Diseases", "description": "Understanding the causes and treatment of diseases in animals."},
+        {"subject": "Veterinary Practice", "description": "Providing medical care to animals in various settings."}
+    ],
+    "Education": [
+        {"subject": "Pedagogy", "description": "The art and science of teaching."},
+        {"subject": "Curriculum Development", "description": "Designing and implementing effective curricula."},
+        {"subject": "Educational Psychology", "description": "Understanding how students learn and develop."}
+    ],
+    "Linguistics": [
+        {"subject": "Phonetics and Phonology", "description": "Studying the sounds of human language."},
+        {"subject": "Syntax", "description": "Analyzing the structure of sentences."},
+        {"subject": "Semantics", "description": "Investigating the meaning of words and sentences."}
+    ],
+    "History": [
+        {"subject": "Historiography", "description": "Studying the methods and interpretations of historical research."},
+        {"subject": "World History", "description": "Examining the history of different regions and cultures around the world."},
+        {"subject": "Cultural History", "description": "Exploring the history of cultural practices and beliefs."}
+    ],
+    "Philosophy": [
+        {"subject": "Logic", "description": "Studying the principles of valid reasoning."},
+        {"subject": "Ethics", "description": "Investigating moral values and principles."},
+        {"subject": "Epistemology", "description": "Exploring the nature of knowledge and belief."}
+    ],
+    "Theology": [
+        {"subject": "Biblical Studies", "description": "Exploring sacred texts and their historical and cultural contexts."},
+        {"subject": "Systematic Theology", "description": "Organizing and interpreting religious beliefs and doctrines."},
+        {"subject": "Ethics", "description": "Examining moral principles and their application to religious life."}
+    ],
+    "Anthropology": [
+        {"subject": "Cultural Anthropology", "description": "Studying human cultures and societies around the world."},
+        {"subject": "Archaeology", "description": "Investigating past societies through the excavation and analysis of material remains."},
+        {"subject": "Biological Anthropology", "description": "Examining human evolution and biological variation."}
+    ],
+    "Criminology": [
+        {"subject": "Criminal Justice", "description": "Studying the systems and processes involved in law enforcement, courts, and corrections."},
+        {"subject": "Criminal Behavior", "description": "Examining the psychological and social factors that contribute to crime."},
+        {"subject": "Forensic Science", "description": "Applying scientific methods to investigate crimes."}
+    ],
+    "Journalism": [
+        {"subject": "News Reporting", "description": "Gathering and reporting news accurately and objectively."},
+        {"subject": "Investigative Journalism", "description": "Conducting in-depth investigations into important issues."},
+        {"subject": "Multimedia Journalism", "description": "Using various media formats to tell stories."}
+    ],
+    "Media Studies": [
+        {"subject": "Media Theory", "description": "Analyzing the role and impact of media in society."},
+        {"subject": "Media Production", "description": "Creating media content for various platforms."},
+        {"subject": "Media Criticism", "description": "Evaluating media content and its effects."}
+    ],
+    "Film Studies": [
+        {"subject": "Film History", "description": "Exploring the development of cinema as an art form and industry."},
+        {"subject": "Film Theory", "description": "Analyzing the language and meaning of film."},
+        {"subject": "Film Production", "description": "Learning the process of making films."}
+    ],
+    "Performing Arts": [
+        {"subject": "Acting", "description": "Developing skills in character portrayal and performance."},
+        {"subject": "Dance", "description": "Learning various dance techniques and choreography."},
+        {"subject": "Music Performance", "description": "Developing skills in playing musical instruments or singing."}
+    ],
+    "Visual Arts": [
+        {"subject": "Drawing", "description": "Developing skills in representing visual forms through drawing."},
+        {"subject": "Painting", "description": "Learning various painting techniques and styles."},
+        {"subject": "Sculpture", "description": "Creating three-dimensional art forms."}
+    ],
+    "Music Theory": [
+        {"subject": "Harmony", "description": "Studying the principles of chord construction and progression."},
+        {"subject": "Counterpoint", "description": "Learning how to combine multiple melodic lines."},
+        {"subject": "Music History", "description": "Exploring the development of music across different periods and cultures."}
+    ],
+    "Fashion Design": [
+        {"subject": "Fashion Illustration", "description": "Creating visual representations of fashion designs."},
+        {"subject": "Pattern Making", "description": "Creating patterns for garment construction."},
+        {"subject": "Textile Design", "description": "Designing and creating fabrics."}
+    ],
+    "Interior Design": [
+        {"subject": "Space Planning", "description": "Designing the layout and flow of interior spaces."},
+        {"subject": "Color Theory", "description": "Understanding the effects of color on mood and perception."},
+        {"subject": "Furniture Design", "description": "Designing and selecting furniture for interior spaces."}
+    ],
+    "Urban Planning": [
+        {"subject": "Urban Design", "description": "Designing the physical form and function of cities."},
+        {"subject": "Transportation Planning", "description": "Planning and managing transportation systems in urban areas."},
+        {"subject": "Land Use Planning", "description": "Regulating the use of land in urban and rural areas."}
+    ],
+    "Civil Engineering": [
+        {"subject": "Structural Engineering", "description": "Designing and analyzing structures such as bridges and buildings."},
+        {"subject": "Transportation Engineering", "description": "Planning, designing, and managing transportation systems."},
+        {"subject": "Environmental Engineering", "description": "Developing solutions to environmental problems."}
+    ],
+    "Mechanical Engineering": [
+        {"subject": "Thermodynamics", "description": "Studying the principles of energy and heat transfer."},
+        {"subject": "Fluid Mechanics", "description": "Analyzing the behavior of fluids."},
+        {"subject": "Manufacturing Processes", "description": "Learning about various manufacturing techniques."}
+    ],
+    "Electrical Engineering": [
+        {"subject": "Circuit Analysis", "description": "Analyzing and designing electrical circuits."},
+        {"subject": "Electronics", "description": "Studying electronic devices and circuits."},
+        {"subject": "Power Systems", "description": "Designing and managing electrical power generation and distribution systems."}
+    ],
+    "Chemical Engineering": [
+        {"subject": "Chemical Thermodynamics", "description": "Applying thermodynamic principles to chemical processes."},
+        {"subject": "Chemical Reaction Engineering", "description": "Designing and analyzing chemical reactors."},
+        {"subject": "Process Control", "description": "Controlling and optimizing chemical processes."}
+    ],
+    "Aerospace Engineering": [
+        {"subject": "Aerodynamics", "description": "Studying the motion of air and its interaction with objects."},
+        {"subject": "Propulsion", "description": "Designing and analyzing aircraft and spacecraft propulsion systems."},
+        {"subject": "Spacecraft Design", "description": "Designing and building spacecraft."}
+    ],
+    "Biomedical Engineering": [
+        {"subject": "Biomechanics", "description": "Applying mechanical principles to biological systems."},
+        {"subject": "Biomaterials", "description": "Developing and using materials for medical applications."},
+        {"subject": "Medical Imaging", "description": "Developing and using imaging techniques for medical diagnosis."}
+    ],
+    "Materials Science": [
+        {"subject": "Materials Chemistry", "description": "Studying the chemical properties of materials."},
+        {"subject": "Materials Physics", "description": "Studying the physical properties of materials."},
+        {"subject": "Materials Processing", "description": "Learning about various techniques for processing materials."}
+    ],
+    "Geology": [
+        {"subject": "Mineralogy", "description": "Studying the properties and classification of minerals."},
+        {"subject": "Petrology", "description": "Studying the origin and formation of rocks."},
+        {"subject": "Structural Geology", "description": "Analyzing the deformation of the Earth's crust."}
+    ],
+    "Meteorology": [
+        {"subject": "Atmospheric Physics", "description": "Studying the physical processes in the atmosphere."},
+        {"subject": "Weather Forecasting", "description": "Predicting future weather conditions."},
+        {"subject": "Climatology", "description": "Studying long-term weather patterns and climate change."}
+    ],
+    "Oceanography": [
+        {"subject": "Physical Oceanography", "description": "Studying the physical properties and processes of the ocean."},
+        {"subject": "Chemical Oceanography", "description": "Studying the chemical composition of seawater."},
+        {"subject": "Biological Oceanography", "description": "Studying marine life and ecosystems."}
+    ],
+    "Agricultural Science": [
+        {"subject": "Crop Science", "description": "Studying the cultivation and management of crops."},
+        {"subject": "Animal Science", "description": "Studying the care and management of livestock."},
+        {"subject": "Soil Science", "description": "Studying the properties and management of soils."}
+    ],
+    "Forestry Management": [
+        {"subject": "Forest Ecology", "description": "Studying the interactions between forest organisms and their environment."},
+        {"subject": "Silviculture", "description": "Managing forest stands for various objectives."},
+        {"subject": "Forest Harvesting", "description": "Planning and implementing sustainable forest harvesting operations."}
+    ],
+    "Wildlife Conservation": [
+        {"subject": "Wildlife Ecology", "description": "Studying the interactions between wildlife populations and their environment."},
+        {"subject": "Conservation Biology", "description": "Developing strategies to protect and manage wildlife populations."},
+        {"subject": "Wildlife Management", "description": "Implementing management practices to maintain healthy wildlife populations."}
+    ],
+    "Culinary Arts": [
+        {"subject": "Cooking Techniques", "description": "Learning various cooking methods and techniques."},
+        {"subject": "Baking and Pastry", "description": "Developing skills in baking breads, pastries, and desserts."},
+        {"subject": "Food Safety and Sanitation", "description": "Learning about safe food handling and preparation practices."}
+    ],
+    "Hospitality Management": [
+        {"subject": "Hotel Management", "description": "Managing the operations of hotels and other lodging establishments."},
+        {"subject": "Restaurant Management", "description": "Managing the operations of restaurants and other food service businesses."},
+        {"subject": "Event Planning", "description": "Planning and organizing events of various types."}
+    ],
+    "Sports Management": [
+        {"subject": "Sports Marketing", "description": "Promoting sports events and teams to attract fans and sponsors."},
+        {"subject": "Sports Finance", "description": "Managing the financial aspects of sports organizations."},
+        {"subject": "Sports Law", "description": "Understanding the legal issues related to sports."}
+    ],
+    "Event Management": [
+        {"subject": "Event Planning", "description": "Organizing and coordinating events of all types, from small meetings to large festivals."},
+        {"subject": "Event Marketing", "description": "Promoting events to attract attendees."},
+        {"subject": "Event Logistics", "description": "Managing the practical aspects of events, such as venue selection and catering."}
+    ],
+    "Supply Chain Management": [
+        {"subject": "Logistics", "description": "Managing the flow of goods and services from suppliers to customers."},
+        {"subject": "Inventory Management", "description": "Controlling the amount of inventory held by a company."},
+        {"subject": "Procurement", "description": "Purchasing goods and services from suppliers."}
+    ],
+    "Project Management": [
+        {"subject": "Project Planning", "description": "Defining project goals, scope, and timelines."},
+        {"subject": "Project Execution", "description": "Carrying out project activities and managing resources."},
+        {"subject": "Project Monitoring and Control", "description": "Tracking project progress and making adjustments as needed."}
+    ],
+    "Real Estate Management": [
+        {"subject": "Property Management", "description": "Managing the day-to-day operations of real estate properties."},
+        {"subject": "Real Estate Finance", "description": "Understanding the financial aspects of real estate investments."},
+        {"subject": "Real Estate Law", "description": "Understanding the legal issues related to real estate."}
+    ],
+    "Social Work": [
+        {"subject": "Social Welfare Policy", "description": "Understanding the policies and programs that address social issues."},
+        {"subject": "Case Management", "description": "Providing support and resources to individuals and families in need."},
+        {"subject": "Community Organizing", "description": "Working with communities to address social problems."}
+    ],
+    "Public Administration": [
+        {"subject": "Public Policy", "description": "Developing and implementing policies to address public issues."},
+        {"subject": "Public Budgeting", "description": "Managing public funds."},
+        {"subject": "Public Management", "description": "Managing public organizations and programs."}
+    ],
+    "Nonprofit Management": [
+        {"subject": "Fundraising", "description": "Raising money to support nonprofit organizations."},
+        {"subject": "Nonprofit Governance", "description": "Understanding the legal and ethical responsibilities of nonprofit boards."},
+        {"subject": "Nonprofit Program Management", "description": "Managing the programs and services offered by nonprofit organizations."}
+    ],
+    "Quantitative Analysis": [
+        {"subject": "Statistical Modeling", "description": "Using statistical methods to analyze data and make predictions."},
+        {"subject": "Financial Modeling", "description": "Creating financial models to evaluate investments and make business decisions."},
+        {"subject": "Data Analysis", "description": "Collecting, cleaning, and analyzing data to extract insights."}
+    ],
+    "Behavioral Economics": [
+        {"subject": "Cognitive Psychology", "description": "Understanding how people think and make decisions."},
+        {"subject": "Judgment and Decision Making", "description": "Studying how people make judgments and choices."},
+        {"subject": "Behavioral Finance", "description": "Applying behavioral insights to financial markets and investment decisions."}
+    ],
+    "Game Design": [
+        {"subject": "Game Mechanics", "description": "Designing the rules and systems that govern gameplay."},
+        {"subject": "Level Design", "description": "Creating engaging and challenging game environments."},
+        {"subject": "Game Art", "description": "Creating the visual assets for games."}
+    ],
+    "Cyberpsychology": [
+        {"subject": "Human-Computer Interaction", "description": "Studying how people interact with technology."},
+        {"subject": "Online Behavior", "description": "Examining how people behave in online environments."},
+        {"subject": "Cybercrime", "description": "Understanding the psychological aspects of cybercrime."}
+    ],
+    "Health Informatics": [
+        {"subject": "Electronic Health Records", "description": "Managing and using electronic health records."},
+        {"subject": "Data Analytics in Healthcare", "description": "Using data to improve healthcare outcomes."},
+        {"subject": "Health Information Systems", "description": "Designing and implementing information systems for healthcare organizations."}
+    ],
+    "Neuroscience": [
+        {"subject": "Neuroanatomy", "description": "Studying the structure of the nervous system."},
+        {"subject": "Neurophysiology", "description": "Studying the function of the nervous system."},
+        {"subject": "Cognitive Neuroscience", "description": "Studying the neural basis of cognitive processes."}
+    ],
+    "Genetics": [
+        {"subject": "Molecular Genetics", "description": "Studying the structure and function of genes at the molecular level."},
+        {"subject": "Population Genetics", "description": "Studying the genetic variation within and between populations."},
+        {"subject": "Genomics", "description": "Studying the entire genome of an organism."}
+    ],
+    "Bioinformatics": [
+        {"subject": "Sequence Analysis", "description": "Analyzing DNA and protein sequences."},
+        {"subject": "Genomics", "description": "Studying the entire genome of an organism."},
+        {"subject": "Computational Biology", "description": "Developing computational methods for analyzing biological data."}
+    ],
+    "Pharmacology": [
+        {"subject": "Pharmacokinetics", "description": "Studying how drugs are absorbed, distributed, metabolized, and excreted by the body."},
+        {"subject": "Pharmacodynamics", "description": "Studying the effects of drugs on the body."},
+        {"subject": "Toxicology", "description": "Studying the harmful effects of drugs and other chemicals."}
+    ],
+    "Clinical Psychology": [
+        {"subject": "Psychopathology", "description": "Studying the nature and causes of mental disorders."},
+        {"subject": "Psychotherapy", "description": "Providing psychological treatment to individuals with mental disorders."},
+        {"subject": "Psychological Assessment", "description": "Using psychological tests and other methods to assess individuals' mental health."}
+    ],
+    "Occupational Therapy": [
+        {"subject": "Occupational Therapy Practice", "description": "Helping people with disabilities to participate in daily activities."},
+        {"subject": "Assistive Technology", "description": "Using technology to help people with disabilities."},
+        {"subject": "Rehabilitation", "description": "Helping people recover from injuries or illnesses."}
+    ],
+    "Physical Therapy": [
+        {"subject": "Anatomy and Physiology", "description": "Studying the structure and function of the human body."},
+        {"subject": "Therapeutic Exercise", "description": "Using exercise to help people recover from injuries or illnesses."},
+        {"subject": "Manual Therapy", "description": "Using hands-on techniques to treat musculoskeletal conditions."}
+    ],
+    "Art Therapy": [
+        {"subject": "Art Therapy Techniques", "description": "Using art materials and techniques to help people express themselves and address emotional issues."},
+        {"subject": "Psychology of Art", "description": "Understanding the psychological aspects of art making."},
+        {"subject": "Art Therapy Assessment", "description": "Using art to assess individuals' emotional and psychological needs."}
+    ],
+    "Music Therapy": [
+        {"subject": "Music Therapy Techniques", "description": "Using music to help people address physical, emotional, and cognitive needs."},
+        {"subject": "Psychology of Music", "description": "Understanding the psychological effects of music."},
+        {"subject": "Music Therapy Assessment", "description": "Using music to assess individuals' needs and progress."}
+    ]
+}

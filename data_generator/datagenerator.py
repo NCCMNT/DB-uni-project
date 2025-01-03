@@ -5,9 +5,22 @@ import people.roles
 import people.employees
 import people.employee_roles
 import people.translators
-import people.users
+# import people.users
 import studies
+import studies.final_exams
 import studies.grades
+import studies.internship_details
+import studies.internships
+import studies.online_study
+import studies.semesters
+import studies.stationary_study
+import studies.students
+import studies.studies
+import studies.studies_meetings
+import studies.studies_schedule
+import studies.study_attandance
+import studies.study_meetups
+import studies.study_semesters
 import studies.subjects
 import misc
 import misc.cities
@@ -57,8 +70,6 @@ def main():
         misc.classrooms.fill_classrooms(cursor)
         people.roles.fill_roles(cursor)
         people.languages.fill_languages(cursor)
-        studies.grades.fill_grades(cursor)
-        studies.subjects.fill_subjects(cursor)
         people.employees.fill_employees(cursor)
         people.employee_roles.fill_employee_roles(cursor)
         people.translators.fill_translators(cursor)
@@ -71,6 +82,21 @@ def main():
         # space for filling orders section
 
         courses.courses_attendance.fill_courses_attandance(cursor)
+        studies.grades.fill_grades(cursor)
+        studies.subjects.fill_subjects(cursor)
+        studies.semesters.fill_semesters(cursor)
+        studies.studies.fill_studies(cursor)
+        studies.study_semesters.fill_study_semesters(cursor)
+        studies.students.fill_students(cursor)
+        studies.internships.fill_internships(cursor)
+        studies.internship_details.fill_internship_details(cursor)
+        studies.studies_schedule.fill_studies_schedule(cursor)
+        studies.final_exams.fill_final_exams(cursor)
+        studies.study_meetups.fill_study_meetups(cursor)
+        studies.studies_meetings.fill_study_meetings(cursor)
+        studies.stationary_study.fill_stationary_study_meetings(cursor)
+        studies.online_study.fill_online_study_meetings(cursor)
+        studies.study_attandance.fill_study_attandance(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
