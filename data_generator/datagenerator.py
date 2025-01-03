@@ -33,6 +33,14 @@ import courses.courses
 import courses.course_meetings
 import courses.stationary_sync_async_course_meetings
 import courses.courses_attendance
+import orders
+import orders.service_types
+import orders.orders
+import orders.order_details
+import orders.payments
+import orders.postponements
+
+
 
 
 path_to_json_file = "database_credentials.json"
@@ -78,9 +86,11 @@ def main():
         courses.courses.fill_courses(cursor)
         courses.course_meetings.fill_course_meetings(cursor)
         courses.stationary_sync_async_course_meetings.fill_stationary_sync_async_course_meetings(cursor)
-
-        # space for filling orders section
-
+        orders.service_types.fill_service_types(cursor)
+        orders.orders.fill_orders(cursor)
+        orders.order_details.fill_order_details(cursor)
+        orders.payments.fill_payments(cursor)
+        orders.postponements.fill_postponements(cursor)
         courses.courses_attendance.fill_courses_attandance(cursor)
         studies.grades.fill_grades(cursor)
         studies.subjects.fill_subjects(cursor)

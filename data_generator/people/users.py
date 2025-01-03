@@ -8,7 +8,7 @@ import string
 def fill_users(cursor: pyodbc.Cursor):
     clear_users(cursor)
 
-    NO_ROWS_TO_GENERATE = 1500
+    NO_ROWS_TO_GENERATE = 8500
 
     current_path = os.path.abspath(__file__)
     current_dir = os.path.dirname(current_path)
@@ -42,6 +42,12 @@ def fill_users(cursor: pyodbc.Cursor):
 def clear_users(cursor: pyodbc.Cursor):
     sql_clear = "DELETE FROM dbo.Users;"
     cursor.execute(sql_clear)
+
+def get_users_count(cursor: pyodbc.Cursor):
+    sql_query = "SELECT COUNT(*) FROM dbo.Users"
+    cursor.execute(sql_query)
+
+    return cursor.fetchval()
 
 def get_addresses_count(cursor: pyodbc.Cursor):
     sql_query = "SELECT COUNT(*) FROM dbo.Addresses"
