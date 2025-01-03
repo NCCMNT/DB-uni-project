@@ -3,7 +3,9 @@ import pyodbc
 
 PROBABILITY_OF_SKIP = 0.08
 
-def fill_webinar_attendace(cursor: pyodbc.Cursor):
+def fill_webinar_attendance(cursor: pyodbc.Cursor):
+    clear_webinar_attendance(cursor)
+
     user_list = get_webinar_user_list(cursor)
     unique_user_list = list({frozenset(item.items()): item for item in user_list}.values())
     insertions = 0
