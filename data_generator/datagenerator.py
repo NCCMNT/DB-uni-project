@@ -5,7 +5,7 @@ import people.roles
 import people.employees
 import people.employee_roles
 import people.translators
-# import people.users
+import people.users
 import studies
 import studies.final_exams
 import studies.grades
@@ -28,7 +28,7 @@ import misc.countries
 import misc.addresses
 import webinars
 import webinars.webinars
-import webinars.webinars_attendance
+import webinars.webinar_attendance
 import misc.classrooms
 import courses.courses
 import courses.course_meetings
@@ -84,31 +84,31 @@ def main():
         people.translators.fill_translators(cursor)
         people.users.fill_users(cursor)
         webinars.webinars.fill_webinars(cursor)
-        webinars.webinars.fill_webinars_attendance(cursor)
         courses.courses.fill_courses(cursor)
         courses.course_meetings.fill_course_meetings(cursor)
         courses.stationary_sync_async_course_meetings.fill_stationary_sync_async_course_meetings(cursor)
-        orders.service_types.fill_service_types(cursor)
-        orders.orders.fill_orders(cursor)
-        orders.order_details.fill_order_details(cursor)
-        orders.payments.fill_payments(cursor)
-        orders.postponements.fill_postponements(cursor)
-        courses.courses_attendance.fill_courses_attandance(cursor)
         studies.grades.fill_grades(cursor)
         studies.subjects.fill_subjects(cursor)
         studies.semesters.fill_semesters(cursor)
         studies.studies.fill_studies(cursor)
         studies.study_semesters.fill_study_semesters(cursor)
-        studies.students.fill_students(cursor)
-        studies.internships.fill_internships(cursor)
-        studies.internship_details.fill_internship_details(cursor)
         studies.studies_schedule.fill_studies_schedule(cursor)
-        studies.final_exams.fill_final_exams(cursor)
         studies.study_meetups.fill_study_meetups(cursor)
         studies.studies_meetings.fill_study_meetings(cursor)
         studies.stationary_study.fill_stationary_study_meetings(cursor)
         studies.online_study.fill_online_study_meetings(cursor)
+        studies.internships.fill_internships(cursor)
+        orders.service_types.fill_service_types(cursor)
+        orders.orders.fill_orders(cursor)
+        orders.order_details.fill_order_details(cursor)
+        orders.payments.fill_payments(cursor)
+        orders.postponements.fill_postponements(cursor)
+        studies.students.fill_students(cursor)
+        studies.internship_details.fill_internship_details(cursor)
+        studies.final_exams.fill_final_exams(cursor)
         studies.study_attandance.fill_study_attandance(cursor)
+        webinars.webinar_attendance.fill_webinar_attendance(cursor)
+        courses.courses_attendance.fill_courses_attandance(cursor)
 
         conn.commit()
         print("Test data inserted successfully.")
