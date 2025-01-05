@@ -1,3 +1,4 @@
+create view CourseAttendance
 with users_on_course_meeting as
          (select CA.CourseMeetingID, count(*) [Users]
           from CoursesAttendance CA
