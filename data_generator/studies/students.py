@@ -4,21 +4,14 @@ import random
 def fill_students(cursor: pyodbc.Cursor):
     clear_students(cursor)
 
-    user_ids = get_user_ids(cursor)
+    user_services_ids = get_user_services_ids_pairs(cursor)
     semesters = get_semesters(cursor)
 
-    checked = set()
     primary_key = 0
 
-    for user_id, study_id in user_ids:
+    for user_id, study_id in user_services_ids:
         
         semester_no = random.choice(semesters)
-
-        while (user_id, study_id, semester_no) in checked:
-            user_id = random.choice(user_ids)
-            semester_no = random.choice(semesters)
-
-        checked.add((user_id, study_id, semester_no))
 
         sql_command = f"""
         INSERT into dbo.Students (StudentID, UserID, StudyID, SemesterNo)
@@ -31,7 +24,7 @@ def clear_students(cursor: pyodbc.Cursor):
     sql_clear = "DELETE FROM dbo.Students;"
     cursor.execute(sql_clear)
 
-def get_user_ids(cursor: pyodbc.Cursor):
+def get_user_services_ids_pairs(cursor: pyodbc.Cursor):
     sql_query = f"""
     SELECT u.UserID, od.ServiceID FROM Users AS u
     INNER JOIN Orders AS o ON o.UserID = u.UserID
@@ -42,7 +35,7 @@ def get_user_ids(cursor: pyodbc.Cursor):
     """
     cursor.execute(sql_query)
     rows = cursor.fetchall()
-    return [row[0] for row in rows]
+    return [row for row in rows]
 
 def get_semesters(cursor: pyodbc.Cursor):
     sql_query = f"""
