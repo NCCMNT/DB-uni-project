@@ -1,3 +1,4 @@
+create view UsersAuthorizedForCourseMeeting as
 with users_course_payments as
          (select O.UserID, OD.ServiceID, sum(Amount) paid, max(PayDate) maxPaymentDate
           from Payments
