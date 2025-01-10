@@ -31,6 +31,11 @@ BEGIN
         RAISERROR('Birth date cannot be earlier than 1900-01-01.', 16, 1);
     END;
 
+    IF @HireDate > GETDATE()
+    BEGIN
+        RAISERROR('Hire date cannot be later than current date.', 16, 1);
+    END;
+
     INSERT INTO Employees (EmployeeID, Firstname, Lastname, BirthDate, HireDate, AddressID, Phone)
     VALUES (@EmployeeID, @Firstname, @Lastname, @BirthDate, @HireDate, @AddressID, @Phone);
 
