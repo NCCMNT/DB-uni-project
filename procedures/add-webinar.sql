@@ -17,6 +17,10 @@ AS
             BEGIN
                 RAISERROR ('Webinar Presenter does not exist', 16, 1)
             END
+        IF @WebinarName IN (SELECT WebinarName FROM dbo.Webinars)
+            BEGIN
+                RAISERROR ('Webinar already exists', 16, 1)
+            END
         IF @TranslatorLanguageID IS NOT NULL AND @TranslatorLanguageID NOT IN (SELECT TranslatorLanguageID FROM Translators)
             BEGIN
                 RAISERROR ('Translator does not exist', 16, 1)
@@ -24,6 +28,10 @@ AS
         IF @Price < 0 OR @Price IS NULL OR @Price > 999999
             BEGIN
                 RAISERROR ('Price must be between 0 and 999999', 16, 1)
+            END
+        IF @RecordingLink IN (SELECT RecordingLink FROM dbo.Webinars)
+            BEGIN
+                RAISERROR ('Recording Link already exists.', 16, 1)
             END
         IF NOT (@RecordingLink LIKE 'https://%' OR @RecordingLink LIKE 'http://%')
             BEGIN
