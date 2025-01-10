@@ -1,15 +1,18 @@
 CREATE PROCEDURE AddWebinar
     @WebinarName varchar(80),
     @RecordingLink varchar(100),
+    @Date date,
     @Price money,
     @WebinarPresenterID int,
     @TranslatorLanguageID int = null
 AS
     BEGIN
         DECLARE @WebinarID int = (select max(WebinarID) + 1 from Webinars)
-        DECLARE @Date date = GETDATE()
         SET NOCOUNT ON
-
+        IF @Date < GETDATE()
+            BEGIN
+                RAISERROR ('Date cannot be in the past', 16, 1)
+            END
         IF @WebinarPresenterID NOT IN (SELECT UserID FROM dbo.Users)
             BEGIN
                 RAISERROR ('Webinar Presenter does not exist', 16, 1)
