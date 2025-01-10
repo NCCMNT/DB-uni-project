@@ -1,7 +1,7 @@
 CREATE PROCEDURE AddWebinar
     @WebinarName varchar(80),
     @RecordingLink varchar(100),
-    @Date date,
+    @Date datetime,
     @Price money,
     @WebinarPresenterID int,
     @TranslatorLanguageID int = null
