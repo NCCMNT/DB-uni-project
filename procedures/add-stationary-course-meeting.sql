@@ -3,7 +3,7 @@ CREATE PROCEDURE AddStationaryCourseMeeting
     @StartDate DATETIME,
     @EndDate DATETIME,
     @CourseInstructorID INT,
-    @LimitOfParticipants INT = NULL,
+    @LimitOfParticipants INT,
     @ClassroomID INT
 AS
 BEGIN
@@ -29,7 +29,7 @@ BEGIN
         RETURN;
     END;
 
-    IF @LimitOfParticipants IS NOT NULL AND @LimitOfParticipants <= 0
+    IF @LimitOfParticipants <= 0
     BEGIN
         RAISERROR('Limit of participants must be greater than 0.', 16, 1);
         RETURN;
@@ -75,4 +75,3 @@ BEGIN
     INSERT INTO StationaryCourse (StationaryCourseMeetingID, ClassroomID)
     VALUES (@StationaryCourseMeetingID, @ClassroomID);
 END;
-
