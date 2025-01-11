@@ -9,17 +9,20 @@ AS
         --handling study name exceptions
         IF @SubjectName IS NULL
             BEGIN
-                RAISERROR ('Subject name cannot be null', 16, 1);
+                RAISERROR ('Subject name cannot be null', 16, 1)
+                RETURN
             END
         IF @SubjectName IN (SELECT SubjectName FROM Subjects)
             BEGIN
                 RAISERROR ('There already exists subject with that name', 16, 1)
+                RETURN
             END
 
         --handling description exceptions
         IF @Description IS NULL
             BEGIN
                 RAISERROR ('Description cannot be null', 16, 1)
+                RETURN
             END
 
         --adding correct values to the table
