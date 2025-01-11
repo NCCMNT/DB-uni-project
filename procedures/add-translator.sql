@@ -11,11 +11,13 @@ BEGIN
     IF NOT EXISTS(SELECT 1 from Employees where EmployeeID = @EmployeeID)
     BEGIN
        RAISERROR('Given employee does not exist', 16, 1);
+       RETURN;
     END
 
     IF NOT EXISTS(SELECT 1 from Languages where LanguageID = @LanguageID)
     BEGIN
        RAISERROR('Given language does not exist', 16, 1);
+       RETURN;
     END
 
     IF NOT EXISTS(
@@ -28,11 +30,13 @@ BEGIN
     )
     BEGIN
        RAISERROR('Given employee does not have a translator role', 16, 1);
+       RETURN;
     END
 
     IF EXISTS(SELECT 1 from Translators where EmployeeID = @EmployeeID AND LanguageID = @LanguageID)
     BEGIN
        RAISERROR('Given employee is already a translator for given language', 16, 1);
+       RETURN;
     END
 
     INSERT INTO Translators (TranslatorLanguageID, LanguageID, EmployeeID)
