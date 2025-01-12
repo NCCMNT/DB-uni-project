@@ -31,4 +31,3 @@ BEGIN
 
     RETURN CAST(@PresenceCount AS REAL) * 100 / @MeetingsCount;
 END;
-GO
