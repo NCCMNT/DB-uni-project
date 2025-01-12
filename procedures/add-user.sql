@@ -17,6 +17,12 @@ BEGIN
         RETURN;
     END;
 
+    IF @Email NOT LIKE '%_@__%.__%'
+    BEGIN
+        RAISERROR('Given email is not valid.', 16, 1);
+        RETURN;
+    END;
+
     IF EXISTS(SELECT 1 FROM Users WHERE Phone = @Phone)
     BEGIN
         RAISERROR('Given phone number is not unique.', 16, 1);
