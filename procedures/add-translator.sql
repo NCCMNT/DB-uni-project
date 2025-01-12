@@ -1,4 +1,4 @@
-CREATE PROCEDURE AddTranslator
+CREATE PROCEDURE AddTranslatorLanguage
     @EmployeeID INT,
     @LanguageID INT
 AS

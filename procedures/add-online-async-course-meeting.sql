@@ -62,4 +62,6 @@ BEGIN
 
     INSERT INTO OnlineAsyncCourse (OnlineAsyncCourseMeetingID, RecordingLink)
     VALUES (@OnlineAsyncCourseMeetingID, @RecordingLink);
+
+    PRINT 'Online asynchronous course meeting added successfully.';
 END;

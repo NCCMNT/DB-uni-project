@@ -1,4 +1,4 @@
-CREATE PROCEDURE AddCourseAttendance
+CREATE PROCEDURE AddCourseMeetingAttendance
     @CourseMeetingID INT,
     @UserID INT
 AS

@@ -74,4 +74,6 @@ BEGIN
 
     INSERT INTO StationaryCourse (StationaryCourseMeetingID, ClassroomID)
     VALUES (@StationaryCourseMeetingID, @ClassroomID);
+
+    PRINT 'Stationary course meeting added successfully.';
 END;

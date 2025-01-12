@@ -62,4 +62,6 @@ BEGIN
 
     INSERT INTO OnlineSyncCourse (OnlineSyncCourseMeetingID, MeetingLink)
     VALUES (@OnlineSyncCourseMeetingID, @MeetingLink);
+
+    PRINT 'Online synchronous course meeting added successfully.';
 END;
