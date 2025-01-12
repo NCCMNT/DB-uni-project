@@ -10,10 +10,12 @@ AS
         IF @OrderDetailID NOT IN (SELECT OrderDetailID FROM dbo.OrderDetails)
             BEGIN
                 RAISERROR ('Order Detail does not exist', 16, 1)
+                RETURN
             END
         IF @PaymentAmount < 0 OR @PaymentAmount IS NULL OR @PaymentAmount > 999999
             BEGIN
                 RAISERROR ('Payment Amount must be between 0 and 999999', 16, 1)
+                RETURN
             END
         INSERT INTO dbo.Payments (PaymentID, OrderDetailID, PayDate, Amount)
         VALUES (@PaymentID, @OrderDetailID, @Date, @PaymentAmount)

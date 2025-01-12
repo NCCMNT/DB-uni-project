@@ -9,6 +9,7 @@ AS
         IF @UserID NOT IN (SELECT UserID FROM dbo.Users)
             BEGIN
                 RAISERROR ('User does not exist', 16, 1)
+                RETURN
             END
 
         INSERT INTO dbo.Orders (OrderID, UserID, OrderDate)

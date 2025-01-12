@@ -10,14 +10,17 @@ AS
         IF @OrderID NOT IN (SELECT OrderID FROM dbo.Orders)
             BEGIN
                 RAISERROR ('Order does not exist', 16, 1)
+                RETURN
             END
         IF @ServiceTypeID NOT IN (SELECT ServiceTypeID FROM dbo.ServiceTypes)
             BEGIN
                 RAISERROR ('Service Type does not exist', 16, 1)
+                RETURN
             END
         IF @ServiceID NOT IN (SELECT ServiceID FROM dbo.AllServices where ServiceType = @ServiceTypeID)
             BEGIN
                 RAISERROR ('Service does not exist', 16, 1)
+                RETURN
             END
         INSERT INTO dbo.OrderDetails (OrderDetailID, OrderID, ServiceTypeID, ServiceID)
         VALUES (@OrderDetailID, @OrderID, @ServiceTypeID, @ServiceID)
