@@ -35,26 +35,36 @@ create view CoursesDebtors as
     ), Debtors as (
         select
             distinct
-            UserID,
-            CourseID
-        from CoursesAttendanceWithCourseID
+            cawcid.UserID,
+            CourseID,
+            DueDate as HeadTeacherPostponementDueDate
+        from CoursesAttendanceWithCourseID as cawcid
+        inner join HeadTeacherPaymentPostponements
+            on cawcid.CourseID = HeadTeacherPaymentPostponements.ServiceID
+                   and cawcid.UserID = HeadTeacherPaymentPostponements.UserID
+        inner join ServiceTypes
+        on ServiceTypes.ServiceTypeID = HeadTeacherPaymentPostponements.ServiceTypeID
+                and ServiceTypeName = 'Course'
         where not exists (
             select 1
             from UsersThatPaidFullPriceForCourse
-            where UsersThatPaidFullPriceForCourse.UserID = CoursesAttendanceWithCourseID.UserID
-              and UsersThatPaidFullPriceForCourse.CourseID = CoursesAttendanceWithCourseID.CourseID
+            where UsersThatPaidFullPriceForCourse.UserID = cawcid.UserID
+              and UsersThatPaidFullPriceForCourse.CourseID = cawcid.CourseID
         )
+            and getdate() > DueDate
     )
     select
         Debtors.UserID,
         Firstname,
         Lastname,
+        Courses.CourseID,
         CourseName,
         Email,
         Phone,
         TotalPrice,
         TotalAmountPaid,
-        TotalPrice - isnull(TotalAmountPaid, 0) as Debt
+        TotalPrice - isnull(TotalAmountPaid, 0) as Debt,
+        HeadTeacherPostponementDueDate
     from Debtors
     left join UserCoursePayments
         on Debtors.UserID = UserCoursePayments.UserID and Debtors.CourseID = UserCoursePayments.ServiceID
