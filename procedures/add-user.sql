@@ -4,7 +4,10 @@ CREATE PROCEDURE AddUser
     @Email VARCHAR(50),
     @Password VARCHAR(255),
     @Phone VARCHAR(15),
-    @AddressID INT
+    @CountryName VARCHAR(50),
+    @CityName VARCHAR(50),
+    @Street VARCHAR(30),
+    @ZipCode VARCHAR(20)
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -29,11 +32,36 @@ BEGIN
         RETURN;
     END;
 
-    IF NOT EXISTS(SELECT 1 FROM Addresses WHERE AddressID = @AddressID)
+    DECLARE @CountryID INT = (SELECT CountryID FROM Countries WHERE CountryName = @CountryName);
+
+    IF NOT EXISTS(
+         SELECT 1
+         FROM Cities
+         INNER JOIN Countries
+            ON Cities.CountryID = Countries.CountryID
+         WHERE CityName = @CityName AND CountryName = @CountryName
+         )
     BEGIN
-        RAISERROR('Given address does not exist.', 16, 1);
-        RETURN;
+        EXEC AddCity
+            @CityName = @CityName,
+            @CountryID = @CountryID;
     END;
+
+    DECLARE @CityID INT = (SELECT CityID FROM Cities WHERE CityName = @CityName);
+
+    IF NOT EXISTS(
+        SELECT 1
+        FROM Addresses
+        WHERE ZipCode = @ZipCode AND CityID = @CityID
+    )
+    BEGIN
+        EXEC AddAddress
+            @CityID = @CityID,
+            @Street = @Street,
+            @ZipCode = @ZipCode
+    END;
+
+    DECLARE @AddressID INT = (SELECT AddressID FROM Addresses WHERE ZipCode = @ZipCode AND Street = @Street AND CityID = @CityID);
 
     INSERT INTO Users (UserID, Firstname, Lastname, Email, Password, Phone, AddressID)
     VALUES (@UserID, @Firstname, @Lastname, @Email, @Password, @Phone, @AddressID);
