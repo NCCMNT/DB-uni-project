@@ -53,12 +53,22 @@ AS
             END
         IF @StartDate < GETDATE()
             BEGIN
-                RAISERROR ('Cannot add meetup with past datetime', 16, 1)
+                RAISERROR ('Cannot add meeting with past datetime', 16, 1)
                 RETURN
             END
         IF @EndDate <= @StartDate
             BEGIN
                 RAISERROR ('End date must be further in time than start date', 16, 1)
+                RETURN
+            END
+
+        DECLARE @MeetupStartDate datetime = (SELECT StartDate FROM StudyMeetups WHERE StudyMeetupID = @StudyMeetupID)
+        DECLARE @MeetupEndDate datetime = (SELECT EndDate FROM StudyMeetups WHERE StudyMeetupID = @StudyMeetupID)
+
+        IF @StartDate < @MeetupStartDate OR @StartDate >= @MeetupEndDate OR
+           @EndDate > @MeetupEndDate OR @EndDate <= @MeetupStartDate
+            BEGIN
+                RAISERROR ('Given dates are out of scope of meetup dates', 16, 1)
                 RETURN
             END
 

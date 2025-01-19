@@ -62,6 +62,16 @@ AS
                 RETURN
             END
 
+        DECLARE @MeetupStartDate datetime = (SELECT StartDate FROM StudyMeetups WHERE StudyMeetupID = @StudyMeetupID)
+        DECLARE @MeetupEndDate datetime = (SELECT EndDate FROM StudyMeetups WHERE StudyMeetupID = @StudyMeetupID)
+
+        IF @StartDate < @MeetupStartDate OR @StartDate >= @MeetupEndDate OR
+           @EndDate > @MeetupEndDate OR @EndDate <= @MeetupStartDate
+            BEGIN
+                RAISERROR ('Given dates are out of scope of meetup dates', 16, 1)
+                RETURN
+            END
+
         --handling lecturer exceptions
         IF @LecturerID IS NULL
             BEGIN
