@@ -27,6 +27,7 @@ CREATE TABLE Classrooms (
     RoomNo int  NOT NULL,
     Capacity int  NOT NULL,
     CONSTRAINT CapacityGtZero CHECK (Capacity > 0),
+    CONSTRAINT RoomNoGtZero CHECK (RoomNo > 0),
     CONSTRAINT Classrooms_pk PRIMARY KEY  (ClassroomID)
 );
 
@@ -66,6 +67,8 @@ CREATE TABLE CoursesMeetings (
     EndDate datetime  NOT NULL,
     CourseInstructorID int  NOT NULL,
     LimitOfParticipants int  NULL,
+    CONSTRAINT LimitOfParticipantsGtZero CHECK (LimitOfParticipants > 0),
+    CONSTRAINT EndDateGtStartDateCM CHECK (EndDate > StartDate),
     CONSTRAINT CoursesMeetings_pk PRIMARY KEY  (MeetingID)
 );
 
@@ -121,7 +124,7 @@ CREATE TABLE InternshipDetails (
     InternshipID int  NOT NULL,
     StudentID int  NOT NULL,
     CompanyName varchar(20)  NOT NULL,
-    Pass bit  NOT NULL,
+    Pass bit  NOT NULL DEFAULT 0,
     CONSTRAINT InternshipDetails_pk PRIMARY KEY  (InternshipID,StudentID)
 );
 
@@ -245,6 +248,7 @@ CREATE TABLE Studies (
     LimitOfStudents int  NOT NULL,
     CONSTRAINT UniqueStudyName UNIQUE (StudyName),
     CONSTRAINT LimitOfStudentsGtZero CHECK (LimitOfStudents > 0),
+    CONSTRAINT StudiesFeePriceGtZero CHECK (FeePrice > 0)
     CONSTRAINT Studies_pk PRIMARY KEY  (StudyID)
 );
 
@@ -324,6 +328,8 @@ CREATE TABLE Users (
     Password varchar(255)  NOT NULL,
     Phone varchar(15)  NULL,
     AddressID int  NOT NULL,
+    CONSTRAINT UniqueEmail UNIQUE (Email),
+    CONSTRAINT UniquePhone UNIQUE (Phone),
     CONSTRAINT ValidEmail CHECK (Email LIKE '%_@__%.__%'),
     CONSTRAINT Users_pk PRIMARY KEY  (UserID)
 );
@@ -331,7 +337,7 @@ CREATE TABLE Users (
 -- Table: Webinars
 CREATE TABLE Webinars (
     WebinarID int  NOT NULL,
-    WebinarName varchar(40)  NOT NULL,
+    WebinarName varchar(80)  NOT NULL,
     RecordingLink varchar(100)  NOT NULL,
     Date datetime  NOT NULL,
     Price money  NULL,
@@ -339,6 +345,7 @@ CREATE TABLE Webinars (
     TranslatorLanguageD int  NULL,
     CONSTRAINT WebinarNameUnique UNIQUE (WebinarName),
     CONSTRAINT RecordingLinkUnique UNIQUE (RecordingLink),
+    CONSTRAINT WebinarPriceGtZero CHECK (Price > 0),
     CONSTRAINT Webinars_pk PRIMARY KEY  (WebinarID)
 );
 
