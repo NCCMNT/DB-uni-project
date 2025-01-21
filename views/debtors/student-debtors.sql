@@ -63,24 +63,39 @@ create view StudentDebtors as
     ), Debtors as (
         select
             distinct
-            UserID,
-            StudyMeetupID
+            StudiesMeetingsAttendanceWithMeetupsID.UserID,
+            StudyMeetupID,
+            DueDate as HeadTeacherPostponementDueDate
         from StudiesMeetingsAttendanceWithMeetupsID
+        inner join HeadTeacherPaymentPostponements
+            on HeadTeacherPaymentPostponements.UserID = StudiesMeetingsAttendanceWithMeetupsID.UserID
+                and HeadTeacherPaymentPostponements.ServiceID = StudiesMeetingsAttendanceWithMeetupsID.StudyMeetupID
+        inner join ServiceTypes
+            on ServiceTypes.ServiceTypeID = HeadTeacherPaymentPostponements.ServiceTypeID
+                and ServiceTypeName = 'Studies Meetup'
         where not exists (
             select 1
             from UsersThatPaidFullPriceForMeetup
             where UsersThatPaidFullPriceForMeetup.UserID = StudiesMeetingsAttendanceWithMeetupsID.UserID
               and UsersThatPaidFullPriceForMeetup.StudyMeetupID = StudiesMeetingsAttendanceWithMeetupsID.StudyMeetupID
         )
+        and DueDate < getdate()
     )
     select
         Debtors.UserID,
         Debtors.StudyMeetupID,
-        StudyMeetups.Price - isnull(TotalAmountPaid, 0) as Debt,
+        Firstname,
+        Lastname,
+        Email,
+        Phone,
+        Price,
         TotalAmountPaid,
-        Price
+        StudyMeetups.Price - isnull(TotalAmountPaid, 0) as Debt
+        , HeadTeacherPostponementDueDate
     from Debtors
     left join UserMeetupPayments
         on Debtors.UserID = UserMeetupPayments.UserID and Debtors.StudyMeetupID = UserMeetupPayments.StudyMeetupID
     inner join StudyMeetups
-        on Debtors.StudyMeetupID = StudyMeetups.StudyMeetupID;
+        on Debtors.StudyMeetupID = StudyMeetups.StudyMeetupID
+    inner join Users
+        on Debtors.UserID = Users.UserID;
