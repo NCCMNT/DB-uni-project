@@ -7,3 +7,8 @@ CREATE INDEX StationaryStudyIDX ON StationaryStudy(ClassroomID);
 CREATE INDEX StudiesMeetingsIDX ON StudiesMeetings(StudyMeetupID, SubjectID, LecturerID, TranslatorLanguageID);
 CREATE INDEX StudyMeetupsIDX ON StudyMeetups(StudySemesterID);
 CREATE INDEX FinalExamsIDX ON FinalExams(GradeID);
+
+-- PEOPLE INDEXES
+CREATE INDEX EmployeesIDX ON Employees(AddressID);
+CREATE INDEX TranslatorsIDX ON Translators(LanguageID, EmployeeID);
+CREATE INDEX UsersIDX ON Users(AddressID);
