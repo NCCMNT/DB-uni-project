@@ -1,3 +1,9 @@
+-- COURSE INDEXES
+
+CREATE INDEX CoursesIDX ON Courses (CourseCoordinatorID, TranslatorLanguageID);
+CREATE INDEX CoursesMeetingsIDX ON CoursesMeetings (CourseID, CourseInstructorID);
+CREATE INDEX StationaryCourseIDX ON StationaryCourse (ClassroomID);
+
 -- STUDIES INDEXES
 CREATE INDEX StudiesIDX ON Studies (StudyCoordinatorID);
 CREATE INDEX StudentsIDX ON Students (UserID, StudyID, SemesterNo);
