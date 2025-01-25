@@ -1,0 +1,1 @@
+GRANT EXECUTE ON AddUser TO guest
