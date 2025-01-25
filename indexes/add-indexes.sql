@@ -1,5 +1,4 @@
 -- COURSE INDEXES
-
 CREATE INDEX CoursesIDX ON Courses (CourseCoordinatorID, TranslatorLanguageID);
 CREATE INDEX CoursesMeetingsIDX ON CoursesMeetings (CourseID, CourseInstructorID);
 CREATE INDEX StationaryCourseIDX ON StationaryCourse (ClassroomID);
@@ -18,3 +17,18 @@ CREATE INDEX FinalExamsIDX ON FinalExams(GradeID);
 CREATE INDEX EmployeesIDX ON Employees(AddressID);
 CREATE INDEX TranslatorsIDX ON Translators(LanguageID, EmployeeID);
 CREATE INDEX UsersIDX ON Users(AddressID);
+
+-- ORDERS INDEXES
+CREATE INDEX OrdersIDX ON Orders (UserID);
+CREATE INDEX OrderDetailsIDX ON OrderDetails (OrderID, ServiceID, ServiceTypeID);
+CREATE INDEX PaymentsIDX on Payments (OrderDetailID);
+CREATE INDEX HeadTeacherPaymentPostponementsIDX on HeadTeacherPaymentPostponements (ServiceTypeID, ServiceID, UserID);
+
+-- WEBINAR INDEXES
+CREATE INDEX WebinarAttendanceIDX on WebinarsAttendance (UserID);
+CREATE INDEX WebinarsIDX on Webinars (TranslatorLanguageID, WebinarPresenterID);
+
+-- MISC INDEXES
+CREATE INDEX CitiesIDX on Cities (CountryID);
+CREATE INDEX AddressesIDX on Addresses (CityID);
+CREATE INDEX ClassroomsIDX on Classrooms (AddressID);
