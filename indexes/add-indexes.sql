@@ -1,6 +1,8 @@
-create index CoursesIDX on Courses (CourseCoordinatorID, TranslatorLanguageID);
-create index CoursesMeetingsIDX on CoursesMeetings (CourseID, CourseInstructorID);
-create index StationaryCourseIDX on StationaryCourse (ClassroomID);
+-- COURSE INDEXES
+
+CREATE INDEX CoursesIDX ON Courses (CourseCoordinatorID, TranslatorLanguageID);
+CREATE INDEX CoursesMeetingsIDX ON CoursesMeetings (CourseID, CourseInstructorID);
+CREATE INDEX StationaryCourseIDX ON StationaryCourse (ClassroomID);
 
 -- STUDIES INDEXES
 CREATE INDEX StudiesIDX ON Studies (StudyCoordinatorID);

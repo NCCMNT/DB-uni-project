@@ -1,3 +1,9 @@
+-- DROP COURSE INDEXES
+
+DROP INDEX IF EXISTS CoursesIDX ON Courses;
+DROP INDEX IF EXISTS CoursesMeetingsIDX ON CoursesMeetings;
+DROP INDEX IF EXISTS StationaryCourseIDX ON StationaryCourse;
+
 -- DROP STUDIES INDEXES
 DROP INDEX IF EXISTS StudiesIDX ON Studies;
 DROP INDEX IF EXISTS StudentsIDX ON Students;
