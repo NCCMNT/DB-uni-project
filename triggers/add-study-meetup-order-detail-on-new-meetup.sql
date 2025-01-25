@@ -3,7 +3,7 @@ ON StudyMeetups
 AFTER INSERT
 AS
 BEGIN
-    -- GET ServiceID of 'Study Meetup' service
+    -- get ServiceID of 'Study Meetup' service
     DECLARE @MeetupServiceID INT = (
         SELECT
             ServiceTypeID
@@ -13,7 +13,7 @@ BEGIN
 
     DECLARE @NewMeetupID INT, @StudySemesterID INT;
 
-    -- GET newest meetup information
+    -- get newest meetup information
     SELECT
         @NewMeetupID = StudyMeetupID,
         @StudySemesterID = StudySemesterID
@@ -24,7 +24,7 @@ BEGIN
 
     DECLARE @StudyID INT;
 
-    -- GET StudyID for given meetup
+    -- get StudyID for given meetup
     SELECT
         @StudyID = StudyID
     FROM StudySemesters
@@ -32,9 +32,9 @@ BEGIN
 
     DECLARE @OrderID INT;
 
-    -- FIND all orders for studies; consider only orders made by students
-    -- WHO ARE currently enrolled in the studies and in the semester related
-    -- TO the new meetup
+    -- find all orders for studies; consider only orders made by students
+    -- who are currently enrolled in the studies and in the semester related
+    -- to the new meetup
     DECLARE OrderCursor CURSOR FOR
     SELECT
         Orders.OrderID
@@ -51,7 +51,7 @@ BEGIN
         AND ServiceID = @StudyID
         AND StudySemesterID = @StudySemesterID;
 
-    -- ADD new order details for given study meetup
+    -- add new order details for given study meetup
     OPEN OrderCursor;
 
     FETCH NEXT FROM OrderCursor INTO @OrderID;
